@@ -1,5 +1,5 @@
 site_name: EPITECH Documentation
 nav:
-    - Home: README.md
+    - Home: index.md
     - About: about.md
 theme: readthedocs
