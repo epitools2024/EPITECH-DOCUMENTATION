@@ -1,17 +1,37 @@
-# Welcome to MkDocs
+# Welcome to EPITECH Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<!-- *NB: Use CTRL + F or Command + F to quickly look for keywords.* -->
 
-## Commands
+# Table of Content
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* **[I. INSTALLATIONS & CONFIGURATIONS](install_config/dual_boot.md)**
 
-## Project layout
+    - [*Windows + Linux Distro*](install_config/dual_boot.md)
+    - [*EPITECH DUMP*](install_config/dump.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* **[II. TOOLS CHEATSHEET](tools_cheatsheet/git.md)**  
+
+    - [*Git*](tools_cheatsheet/git.md)
+    - [*Csfml*](tools_cheatsheet/csfml.md)
+    - [*Ncurses*](tools_cheatsheet/ncurses.md)
+    - [*Blih*](tools_cheatsheet/blih.md)
+    - [*Emacs*](tools_cheatsheet/emacs.md)
+    - [*Vim*](tools_cheatsheet/vim.md)
+    - [*Makefile*](tools_cheatsheet/makefile.md)
+
+* **[III. C PROGRAMMING](c_programming/functions.md)** 
+
+    - [*Simples functions*](c_programming/functions.md)
+    - [*Your library*](c_programming/libmy.md)
+    - [*Unit Test*](c_programming/unit_test.md)
+
+* **[IV. About](about/epitools.md)**
+    
+    - [*EPITOOLS*](about/epitools.md)
+    - [*Contribution*](about/contribution.md)
+
+* **[License](license.md)**
+
+> **First solve the problem. Then, write the code.** – *John Johnson*
+
+---

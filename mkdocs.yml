@@ -1,5 +1,42 @@
 site_name: EPITECH Documentation
+repo_url: https://github.com/epitools2024/epitech-documentation.git
+site_description: "All the documents you will use at EPITECH"
+site_author: epitools2024
+
+theme:
+    name: null
+    custom_dir: 'cinder'
+    colorscheme: github
+    shortcuts:
+        next: 78
+        previous: 80
+        search: 83
+    extra_css:
+
 nav:
     - Home: index.md
-    - About: about.md
-theme: readthedocs
+    - INSTALLATION & CONFIGURATIONS:
+        - Windows + Linux Distro: install_config/dual_boot.md
+        - EPITECH DUMP: install_config/dump.md
+    - TOOLS CHEATSHEET:
+        - git: tools_cheatsheet/git.md
+        - csfml: tools_cheatsheet/csfml.md
+        - ncurses: tools_cheatsheet/ncurses.md
+        - blih: tools_cheatsheet/blih.md
+        - emacs: tools_cheatsheet/emacs.md
+        - vim: tools_cheatsheet/vim.md
+        - Makefile: tools_cheatsheet/makefile.md
+    - C PROGRAMMING:
+        - Simples functions: c_programming/functions.md
+        - Your library: c_programming/libmy.md
+        - Unit Test: c_programming/unit_test.md
+    - ABOUT:
+        - EPITOOLS: about/epitools.md
+        - Contribution: about/contribution.md
+    - LICENSE: license.md
+
+markdown_extensions:
+    - toc:
+        baselevel: 2
+
+copyright: EPITOOLS
