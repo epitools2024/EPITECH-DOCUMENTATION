@@ -1,0 +1,1 @@
+The script available on the following repository [Kayofeld Repository](https://github.com/kayofeld/script-installation-ordinateur-epitech) is perfect for the epitech dump.

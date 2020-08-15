@@ -1,0 +1,1 @@
+# EPITECH-CHEAT_SHEET by [Blacky_yg](https://github.com/blacky-yg), [NemesisX1](https://github.com/NemesisX1) and [Prince](https://github.com/CMasterp)

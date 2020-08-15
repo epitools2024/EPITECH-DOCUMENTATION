@@ -4,8 +4,7 @@ site_description: "All the documents you will use at EPITECH"
 site_author: epitools2024
 
 theme:
-    name: null
-    custom_dir: 'cinder'
+    name: windmill
     colorscheme: github
     shortcuts:
         next: 78

@@ -4,6 +4,10 @@
 
 # Table of Content
 
+* **[1. What is EPITECH]()**
+
+* **[2. About CPOOL]()** 
+
 * **[I. INSTALLATIONS & CONFIGURATIONS](install_config/dual_boot.md)**
 
     - [*Windows + Linux Distro*](install_config/dual_boot.md)
@@ -33,5 +37,3 @@
 * **[License](license.md)**
 
 > **First solve the problem. Then, write the code.** – *John Johnson*
-
----
