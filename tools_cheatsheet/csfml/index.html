@@ -1,335 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All the documents you will use at EPITECH">
+    
     <meta name="author" content="epitools2024">
     
     <link rel="shortcut icon" href="../../img/favicon.ico">
-
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>csfml - EPITECH Documentation</title>
-    
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../../css/base.min.css" rel="stylesheet">
-    <link href="../../css/cinder.min.css" rel="stylesheet">
-
-    
-        
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
-        
-    
-
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-        <![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
     
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "How to understand and start 2D game :robot:", url: "#_top", children: [
+              {title: "Understand the game", url: "#understand-the-game" },
+              {title: "Set up the game in CSFML", url: "#set-up-the-game-in-csfml" },
+          ]},
+        ];
 
-     
+    </script>
+    <script src="../../js/base.js"></script> 
 </head>
 
 <body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
 
-            <!-- Main title -->
-
-            <a class="navbar-brand" href="../..">EPITECH Documentation</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li >
-                        <a href="../..">Home</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">INSTALLATION & CONFIGURATIONS <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../install_config/dual_boot/">Windows + Linux Distro</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../install_config/dump/">EPITECH DUMP</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOOLS CHEATSHEET <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../git/">git</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">csfml</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../ncurses/">ncurses</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../blih/">blih</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../emacs/">emacs</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../vim/">vim</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../makefile/">Makefile</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">C PROGRAMMING <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../c_programming/functions/">Simples functions</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../c_programming/libmy/">Your library</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../c_programming/unit_test/">Unit Test</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../about/epitools/">EPITOOLS</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../about/contribution/">Contribution</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../../license/">LICENSE</a>
-                    </li>
-                
-                
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../git/">
-                            <i class="fas fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="next" href="../ncurses/">
-                            Next <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/tools_cheatsheet/csfml.md"><i class="fab fa-github"></i> Edit on GitHub</a>
-                    </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-    <div class="container">
-        
-        
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-    </ul>
-</div></div>
-        <div class="col-md-9" role="main">
-
-</div>
-        
-        
-    </div>
-
-    <footer class="col-md-12 text-center">
-        
-        <hr>
-        <p>
-        <small>EPITOOLS</small><br>
-        
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-        </p>
-
-        
-        
-    </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../js/bootstrap-3.0.3.min.js"></script>
-
-    
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-        
-    <script>hljs.initHighlightingOnLoad();</script>
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
     
 
-    <script>var base_url = "../.."</script>
     
-    <script src="../../js/base.js"></script>
-    <script src="../../search/main.js"></script>
+    
+      
+    
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ncurses/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ncurses/" class="btn btn-xs btn-link">
+        ncurses
+      </a>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+    
+    <div class="wm-article-nav">
+      <a href="../git/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../git/" class="btn btn-xs btn-link">
+        git
+      </a>
     </div>
+    
+  </div>
+
+    
+
+    <h2 id="how-to-understand-and-start-2d-game-robot">How to understand and start 2D game :robot:</h2>
+<h3 id="understand-the-game"><em>Understand the game</em></h3>
+<p>A 2D game is mainly a king of program which generally follow a guideline.
+It is made with 3 main parts:</p>
+<ul>
+<li><em>Initialisation</em></li>
+<li><em>Game loop</em></li>
+<li><em>Free resources</em></li>
+</ul>
+<p>You notice the game core is the game loop.
+But we will describe the two others parts.</p>
+<ul>
+<li>
+<p><strong><em>Initialisation</em></strong></p>
+<p>In this part you load in the memory all the component you want to use inside your game loop.
+You have to initialize the variables you want to use with the right element, sprite, sound, image, text, all your asset and whatever you want to use inside the game.
+It is also here you will fix the position of your assets (for example you will set the positions of all the assets, probably decide if you want to play the main sound of your game as soon as the game start).
+It is important to do this part before the game loop.</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><strong><em>Game loop</em></strong></p>
+<p>The game loop is the main part of the game. It is here you will implement the game logic, manage events and also where you will draw the assets.
+By game logic, I mean all the game "itself". It is here you will define how the player will move, how the score will be displayed, what will happen if you click on "Play", etc...
+It is here where you will define whatever should happens according to the events. An event could be a keyboard input, the collision between two objects, check when a click happens and others things as it.
+So the game loop is divided in three parts:</p>
+</li>
+<li>
+<p>event loop : where you manage all the events   which will happen in the game ,</p>
+</li>
+<li>
+<p>update : where live the game logic ,</p>
+</li>
+<li>
+<p>drawing : the part where you draw all the asset you want in the game.</p>
+<p>You could follow this way to correctly setup or organize your future game project.</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li><strong><em>Free ressources</em></strong></li>
+</ul>
+<p>It this part you free (is necessary because it depends on your programming language) the all the memory you should have used in your game</p>
+<hr />
+<p>:smirk:
+This just an overview of the organization of a video game project. It may change depend on the game engine and barely of the framework you use.
+So feel free to follow the way you want to follow</p>
+<h3 id="set-up-the-game-in-csfml"><em>Set up the game in CSFML</em></h3>
+<blockquote>
+<p>Coming soon.... :kiss:</p>
+</blockquote>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ncurses/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ncurses/" class="btn btn-xs btn-link">
+        ncurses
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../git/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../git/" class="btn btn-xs btn-link">
+        git
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
 </div>
-    </body>
 
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/tools_cheatsheet/csfml.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p><p>EPITOOLS</p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>

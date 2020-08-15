@@ -1,245 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="All the documents you will use at EPITECH">
     <meta name="author" content="epitools2024">
     
-    <link rel="shortcut icon" href="img/favicon.ico">
-
-    
-    <title>Home - EPITECH Documentation</title>
-    
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="css/base.min.css" rel="stylesheet">
-    <link href="css/cinder.min.css" rel="stylesheet">
-
-    
-        
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
-        
-    
-
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>EPITECH Documentation</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-        <![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "Welcome to EPITECH Documentation", url: "#_top", children: [
+          ]},
+          {title: "Table of Content", url: "#table-of-content", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        EPITECH Documentation<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+    <ul class="wm-toctree wm-toc-repo">
+      <li class="wm-toc-li wm-toc-lev1">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/epitools2024/epitech-documentation.git/">
+        <i class="fa fa-github"></i>
+
+        GitHub
+      </a>
+      </li>
+    </ul>
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Home</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">INSTALLATION & CONFIGURATIONS</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="install_config/dual_boot/" class="wm-article-link wm-toc-text">Windows + Linux Distro</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="install_config/dump/" class="wm-article-link wm-toc-text">EPITECH DUMP</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">TOOLS CHEATSHEET</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/git/" class="wm-article-link wm-toc-text">git</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/csfml/" class="wm-article-link wm-toc-text">csfml</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/ncurses/" class="wm-article-link wm-toc-text">ncurses</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/blih/" class="wm-article-link wm-toc-text">blih</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/emacs/" class="wm-article-link wm-toc-text">emacs</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/vim/" class="wm-article-link wm-toc-text">vim</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/makefile/" class="wm-article-link wm-toc-text">Makefile</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">C PROGRAMMING</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="c_programming/functions/" class="wm-article-link wm-toc-text">Simples functions</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="c_programming/libmy/" class="wm-article-link wm-toc-text">Your library</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="c_programming/unit_test/" class="wm-article-link wm-toc-text">Unit Test</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">ABOUT</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about/epitools/" class="wm-article-link wm-toc-text">EPITOOLS</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about/contribution/" class="wm-article-link wm-toc-text">Contribution</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 "><a href="license/" class="wm-article-link wm-toc-text">LICENSE</a>
+</li>
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="install_config/dual_boot/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="install_config/dual_boot/" class="btn btn-xs btn-link">
+        Windows + Linux Distro
+      </a>
+    </div>
+    
+  </div>
 
     
 
-     
-</head>
-
-<body class="homepage" >
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-
-            <!-- Main title -->
-
-            <a class="navbar-brand" href=".">EPITECH Documentation</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li class="active">
-                        <a href=".">Home</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">INSTALLATION & CONFIGURATIONS <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="install_config/dual_boot/">Windows + Linux Distro</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="install_config/dump/">EPITECH DUMP</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOOLS CHEATSHEET <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="tools_cheatsheet/git/">git</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="tools_cheatsheet/csfml/">csfml</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="tools_cheatsheet/ncurses/">ncurses</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="tools_cheatsheet/blih/">blih</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="tools_cheatsheet/emacs/">emacs</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="tools_cheatsheet/vim/">vim</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="tools_cheatsheet/makefile/">Makefile</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">C PROGRAMMING <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="c_programming/functions/">Simples functions</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="c_programming/libmy/">Your library</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="c_programming/unit_test/">Unit Test</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="about/epitools/">EPITOOLS</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="about/contribution/">Contribution</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="license/">LICENSE</a>
-                    </li>
-                
-                
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
-                    <li class="disabled">
-                        <a rel="prev" >
-                            <i class="fas fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="next" href="install_config/dual_boot/">
-                            Next <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/index.md"><i class="fab fa-github"></i> Edit on GitHub</a>
-                    </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-    <div class="container">
-        
-        
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#welcome-to-epitech-documentation">Welcome to EPITECH Documentation</a></li>
-        <li class="first-level "><a href="#table-of-content">Table of Content</a></li>
-    </ul>
-</div></div>
-        <div class="col-md-9" role="main">
-
-<h2 id="welcome-to-epitech-documentation">Welcome to EPITECH Documentation</h2>
+    <h2 id="welcome-to-epitech-documentation">Welcome to EPITECH Documentation</h2>
 <!-- *NB: Use CTRL + F or Command + F to quickly look for keywords.* -->
 
 <h2 id="table-of-content">Table of Content</h2>
 <ul>
+<li>
+<p><strong><a href="">1. What is EPITECH</a></strong></p>
+</li>
+<li>
+<p><strong><a href="">2. About CPOOL</a></strong> </p>
+</li>
 <li>
 <p><strong><a href="install_config/dual_boot/">I. INSTALLATIONS &amp; CONFIGURATIONS</a></strong></p>
 <ul>
@@ -281,108 +248,43 @@
 <blockquote>
 <p><strong>First solve the problem. Then, write the code.</strong> – <em>John Johnson</em></p>
 </blockquote>
-<hr /></div>
-        
-        
-    </div>
 
-    <footer class="col-md-12 text-center">
-        
-        <hr>
-        <p>
-        <small>EPITOOLS</small><br>
-        
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-        </p>
-
-        
-        
-    </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap-3.0.3.min.js"></script>
-
-    
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-        
-    <script>hljs.initHighlightingOnLoad();</script>
+  <br>
     
 
-    <script>var base_url = "."</script>
     
-    <script src="js/base.js"></script>
-    <script src="search/main.js"></script>
+    
+      
+    
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="install_config/dual_boot/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="install_config/dual_boot/" class="btn btn-xs btn-link">
+        Windows + Linux Distro
+      </a>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+    
+  </div>
+
+    <br>
 </div>
-    </body>
 
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/index.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p><p>EPITOOLS</p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>
-
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2020-08-15 14:41:29.651242+00:00
+Build Date UTC : 2020-08-15 15:56:28.516554+00:00
 -->
