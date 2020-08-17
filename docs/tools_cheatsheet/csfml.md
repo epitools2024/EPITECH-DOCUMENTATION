@@ -5,14 +5,14 @@
 A 2D game is mainly a king of program which generally follow a guideline.
 It is made with 3 main parts:
 
-- *Initialisation*
+- *Initialization*
 - *Game loop*
 - *Free resources*
 
 You notice the game core is the game loop.
 But we will describe the two others parts.
 
-- ***Initialisation***
+- ***Initialization***
 
     In this part you load in the memory all the component you want to use inside your game loop.
     You have to initialize the variables you want to use with the right element, sprite, sound, image, text, all your asset and whatever you want to use inside the game.
@@ -38,7 +38,7 @@ But we will describe the two others parts.
 
 ---
 
-- ***Free ressources***
+- ***Free resources***
 
   It this part you free (is necessary because it depends on your programming language) the all the memory you should have used in your game
 
@@ -49,5 +49,40 @@ This just an overview of the organization of a video game project. It may change
 So feel free to follow the way you want to follow
 
 ## *Set up the game in CSFML*
+Let go to a new step. You wanna create a game. Let make first a simple window.
+```c
+  #include <SFML/Graphics.h>
+  #include <SFML/Config.h>
+  #include <SFML/Audio.h>
+  #include <SFML/System.h>
 
-> Coming soon.... :kiss:
+  sfRenderWindow *create_window(unsigned int width,
+                              unsigned int height, char const *title)
+  {
+    sfRenderWindow *Window;
+    sfVideoMode mode;
+
+    mode.width = width;
+    mode.height = height;
+    mode.bitsPerPixel = 32;
+    Window = sfRenderWindow_create(mode, title, sfResize | sfClose, NULL);
+    return (Window);
+  }
+
+  int main() 
+  {
+    sfRenderWindow *window = create_window(800, 600, "CSFML");
+    sfEvent event;
+    while (sfRenderWindow_isOpen(window)) {
+       sfRenderWindow_clear(window, sfBlack);
+        while (sfRenderWindow_pollEvent(window, &event)) {
+            if (event.type == sfEvtClosed
+                || sfKeyboard_isKeyPressed(sfKeyEscape))
+                sfRenderWindow_close(window);
+        }
+      sfRenderWindow_display(window);
+    }
+    sfRenderWindow_destroy(window);
+  }
+  
+```
