@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>csfml - EPITECH Documentation</title>
+    <title>Csfml Library - EPITECH Documentation</title>
     <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../../css/base.css" rel="stylesheet">
@@ -66,15 +66,15 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
       <a href="../ncurses/" class="btn btn-xs btn-link">
-        ncurses
+        Ncurses Library
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../git/" class="btn btn-xs btn-default pull-left">
+      <a href="../makefile/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../git/" class="btn btn-xs btn-link">
-        git
+        Previous</a><a href="../makefile/" class="btn btn-xs btn-link">
+        Makefile
       </a>
     </div>
     
@@ -87,7 +87,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>A 2D game is mainly a king of program which generally follow a guideline.
 It is made with 3 main parts:</p>
 <ul>
-<li><em>Initialisation</em></li>
+<li><em>Initialization</em></li>
 <li><em>Game loop</em></li>
 <li><em>Free resources</em></li>
 </ul>
@@ -95,7 +95,7 @@ It is made with 3 main parts:</p>
 But we will describe the two others parts.</p>
 <ul>
 <li>
-<p><strong><em>Initialisation</em></strong></p>
+<p><strong><em>Initialization</em></strong></p>
 <p>In this part you load in the memory all the component you want to use inside your game loop.
 You have to initialize the variables you want to use with the right element, sprite, sound, image, text, all your asset and whatever you want to use inside the game.
 It is also here you will fix the position of your assets (for example you will set the positions of all the assets, probably decide if you want to play the main sound of your game as soon as the game start).
@@ -124,7 +124,7 @@ So the game loop is divided in three parts:</p>
 </ul>
 <hr />
 <ul>
-<li><strong><em>Free ressources</em></strong></li>
+<li><strong><em>Free resources</em></strong></li>
 </ul>
 <p>It this part you free (is necessary because it depends on your programming language) the all the memory you should have used in your game</p>
 <hr />
@@ -132,9 +132,42 @@ So the game loop is divided in three parts:</p>
 This just an overview of the organization of a video game project. It may change depend on the game engine and barely of the framework you use.
 So feel free to follow the way you want to follow</p>
 <h3 id="set-up-the-game-in-csfml"><em>Set up the game in CSFML</em></h3>
-<blockquote>
-<p>Coming soon.... :kiss:</p>
-</blockquote>
+<p>Let go to a new step. You wanna create a game. Let make first a simple window.</p>
+<pre><code class="c">  #include &lt;SFML/Graphics.h&gt;
+  #include &lt;SFML/Config.h&gt;
+  #include &lt;SFML/Audio.h&gt;
+  #include &lt;SFML/System.h&gt;
+
+  sfRenderWindow *create_window(unsigned int width,
+                              unsigned int height, char const *title)
+  {
+    sfRenderWindow *Window;
+    sfVideoMode mode;
+
+    mode.width = width;
+    mode.height = height;
+    mode.bitsPerPixel = 32;
+    Window = sfRenderWindow_create(mode, title, sfResize | sfClose, NULL);
+    return (Window);
+  }
+
+  int main() 
+  {
+    sfRenderWindow *window = create_window(800, 600, &quot;CSFML&quot;);
+    sfEvent event;
+    while (sfRenderWindow_isOpen(window)) {
+       sfRenderWindow_clear(window, sfBlack);
+        while (sfRenderWindow_pollEvent(window, &amp;event)) {
+            if (event.type == sfEvtClosed
+                || sfKeyboard_isKeyPressed(sfKeyEscape))
+                sfRenderWindow_close(window);
+        }
+      sfRenderWindow_display(window);
+    }
+    sfRenderWindow_destroy(window);
+  }
+
+</code></pre>
 
   <br>
     
@@ -152,15 +185,15 @@ So feel free to follow the way you want to follow</p>
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
       <a href="../ncurses/" class="btn btn-xs btn-link">
-        ncurses
+        Ncurses Library
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../git/" class="btn btn-xs btn-default pull-left">
+      <a href="../makefile/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../git/" class="btn btn-xs btn-link">
-        git
+        Previous</a><a href="../makefile/" class="btn btn-xs btn-link">
+        Makefile
       </a>
     </div>
     
@@ -173,7 +206,7 @@ So feel free to follow the way you want to follow</p>
       <p>
         <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/tools_cheatsheet/csfml.md"><i class="fa fa-github"></i>
 Edit on GitHub</a>
-      </p><p>EPITOOLS</p>
+      </p><p>EPITOOLS 2024</p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
 

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All the documents you will use at EPITECH">
+    <meta name="description" content="All you will use at EPITECH">
     <meta name="author" content="epitools2024">
     
     <link rel="shortcut icon" href="./img/favicon.ico">
@@ -35,8 +35,7 @@
         
         var pageToc = [
           {title: "Welcome to EPITECH Documentation", url: "#_top", children: [
-          ]},
-          {title: "Table of Content", url: "#table-of-content", children: [
+              {title: "Table of Content", url: "#table-of-content" },
           ]},
         ];
 
@@ -103,8 +102,17 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
       </li>
     </ul>
   <ul class="wm-toctree">
-        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Home</a>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">ABOUT EPITECH</span>
 </li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about_epitech/epitech/" class="wm-article-link wm-toc-text">Epitech PEDAGOGY</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about_epitech/links_docs/" class="wm-article-link wm-toc-text">Links & Documents</a>
+</li>
+  </ul>
+</li>
+
         <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">INSTALLATION & CONFIGURATIONS</span>
 </li>
 <li class="wm-toc-li-nested collapse">
@@ -120,19 +128,17 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </li>
 <li class="wm-toc-li-nested collapse">
   <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/git/" class="wm-article-link wm-toc-text">git</a>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/blih/" class="wm-article-link wm-toc-text">Blih</a>
 </li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/csfml/" class="wm-article-link wm-toc-text">csfml</a>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/emacs/" class="wm-article-link wm-toc-text">Emacs</a>
 </li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/ncurses/" class="wm-article-link wm-toc-text">ncurses</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/blih/" class="wm-article-link wm-toc-text">blih</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/emacs/" class="wm-article-link wm-toc-text">emacs</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/vim/" class="wm-article-link wm-toc-text">vim</a>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/git/" class="wm-article-link wm-toc-text">Git</a>
 </li>
       <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/makefile/" class="wm-article-link wm-toc-text">Makefile</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/csfml/" class="wm-article-link wm-toc-text">Csfml Library</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/ncurses/" class="wm-article-link wm-toc-text">Ncurses Library</a>
 </li>
   </ul>
 </li>
@@ -150,19 +156,19 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   </ul>
 </li>
 
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">ABOUT</span>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">ABOUT US</span>
 </li>
 <li class="wm-toc-li-nested collapse">
   <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="about/epitools/" class="wm-article-link wm-toc-text">EPITOOLS</a>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about_us/epitools/" class="wm-article-link wm-toc-text">EPITOOLS</a>
 </li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="about/contribution/" class="wm-article-link wm-toc-text">Contribution</a>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about_us/contribution/" class="wm-article-link wm-toc-text">Contribution</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about_us/license/" class="wm-article-link wm-toc-text">LICENSE</a>
 </li>
   </ul>
 </li>
 
-        <li class="wm-toc-li wm-toc-lev1 "><a href="license/" class="wm-article-link wm-toc-text">LICENSE</a>
-</li>
   </ul>
 </nav>
 
@@ -176,58 +182,38 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     
-    
-      
-    
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="install_config/dual_boot/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="install_config/dual_boot/" class="btn btn-xs btn-link">
-        Windows + Linux Distro
-      </a>
-    </div>
-    
-  </div>
-
-    
 
     <h2 id="welcome-to-epitech-documentation">Welcome to EPITECH Documentation</h2>
-<!-- *NB: Use CTRL + F or Command + F to quickly look for keywords.* -->
-
-<h2 id="table-of-content">Table of Content</h2>
+<hr />
+<h3 id="table-of-content">Table of Content</h3>
 <ul>
 <li>
-<p><strong><a href="">1. What is EPITECH</a></strong></p>
+<p><strong><a href="./">I. ABOUT EPITECH</a></strong></p>
+<ul>
+<li><a href="about_epitech/epitech/"><em>Epitech PEDAGOGY</em></a></li>
+<li><a href="about_epitech/links_docs/"><em>Links &amp; Documents</em></a></li>
+</ul>
 </li>
 <li>
-<p><strong><a href="">2. About CPOOL</a></strong> </p>
-</li>
-<li>
-<p><strong><a href="install_config/dual_boot/">I. INSTALLATIONS &amp; CONFIGURATIONS</a></strong></p>
+<p><strong><a href="install_config/dual_boot/">II. INSTALLATIONS &amp; CONFIGURATIONS</a></strong></p>
 <ul>
 <li><a href="install_config/dual_boot/"><em>Windows + Linux Distro</em></a></li>
 <li><a href="install_config/dump/"><em>EPITECH DUMP</em></a></li>
 </ul>
 </li>
 <li>
-<p><strong><a href="tools_cheatsheet/git/">II. TOOLS CHEATSHEET</a></strong>  </p>
+<p><strong><a href="tools_cheatsheet/git/">III. TOOLS CHEATSHEET</a></strong></p>
 <ul>
-<li><a href="tools_cheatsheet/git/"><em>Git</em></a></li>
-<li><a href="tools_cheatsheet/csfml/"><em>Csfml</em></a></li>
-<li><a href="tools_cheatsheet/ncurses/"><em>Ncurses</em></a></li>
 <li><a href="tools_cheatsheet/blih/"><em>Blih</em></a></li>
 <li><a href="tools_cheatsheet/emacs/"><em>Emacs</em></a></li>
-<li><a href="tools_cheatsheet/vim/"><em>Vim</em></a></li>
+<li><a href="tools_cheatsheet/git/"><em>Git</em></a></li>
 <li><a href="tools_cheatsheet/makefile/"><em>Makefile</em></a></li>
+<li><a href="tools_cheatsheet/csfml/"><em>Csfml Library</em></a></li>
+<li><a href="tools_cheatsheet/ncurses/"><em>Ncurses Library</em></a></li>
 </ul>
 </li>
 <li>
-<p><strong><a href="c_programming/functions/">III. C PROGRAMMING</a></strong> </p>
+<p><strong><a href="c_programming/functions/">IV. C PROGRAMMING</a></strong></p>
 <ul>
 <li><a href="c_programming/functions/"><em>Simples functions</em></a></li>
 <li><a href="c_programming/libmy/"><em>Your library</em></a></li>
@@ -235,41 +221,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </ul>
 </li>
 <li>
-<p><strong><a href="about/epitools/">IV. About</a></strong></p>
+<p><strong><a href="about_us/epitools/">V. ABOUT US</a></strong></p>
 <ul>
-<li><a href="about/epitools/"><em>EPITOOLS</em></a></li>
-<li><a href="about/contribution/"><em>Contribution</em></a></li>
+<li><a href="about_us/epitools/"><em>EPITOOLS</em></a></li>
+<li><a href="about_us/contribution/"><em>Contribution</em></a></li>
+<li><a href="about_us/license/"><em>License</em></a></li>
 </ul>
-</li>
-<li>
-<p><strong><a href="license/">License</a></strong></p>
 </li>
 </ul>
 <blockquote>
-<p><strong>First solve the problem. Then, write the code.</strong> – <em>John Johnson</em></p>
+<p><em>First solve the problem. Then, write the code.</em> – <strong>John Johnson</strong></p>
 </blockquote>
 
   <br>
     
-
-    
-    
-      
-    
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="install_config/dual_boot/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="install_config/dual_boot/" class="btn btn-xs btn-link">
-        Windows + Linux Distro
-      </a>
-    </div>
-    
-  </div>
 
     <br>
 </div>
@@ -278,7 +243,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
       <p>
         <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/index.md"><i class="fa fa-github"></i>
 Edit on GitHub</a>
-      </p><p>EPITOOLS</p>
+      </p><p>EPITOOLS 2024</p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
 
@@ -286,5 +251,5 @@ Edit on GitHub</a>
 </html>
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2020-08-15 15:56:28.516554+00:00
+Build Date UTC : 2020-08-18 15:49:28.617011+00:00
 -->
