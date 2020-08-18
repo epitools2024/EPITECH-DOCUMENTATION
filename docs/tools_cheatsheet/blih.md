@@ -1,5 +1,5 @@
 The Bocal Lightweight Interface for Humans, BLIH is the EPITECH repository management tool.
-A student from the class of 2021 created a WEB interface called [BLIH web](blih.salmon.io).
+A student from the class of 2021 created a WEB interface called [BLIH web](https://github.com/maximelouet/blih-web).
 Throughout the school year, you're going to have to submit projects on Epitech servers.
 
 If you have used the kayofeld script, you are a winner. The script installs the BLIH and configures the necessary.
