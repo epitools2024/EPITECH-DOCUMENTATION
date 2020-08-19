@@ -49,7 +49,11 @@ This just an overview of the organization of a video game project. It may change
 So feel free to follow the way you want to follow
 
 ## *Set up the game in CSFML*
+
+### Basics
+
 Let go to a new step. You wanna create a game. Let make first a simple window.
+
 ```c
   #include <SFML/Graphics.h>
   #include <SFML/Config.h>
@@ -69,15 +73,14 @@ Let go to a new step. You wanna create a game. Let make first a simple window.
     return (Window);
   }
 
-  int main() 
+  int main()
   {
     sfRenderWindow *window = create_window(800, 600, "CSFML");
     sfEvent event;
     while (sfRenderWindow_isOpen(window)) {
        sfRenderWindow_clear(window, sfBlack);
         while (sfRenderWindow_pollEvent(window, &event)) {
-            if (event.type == sfEvtClosed
-                || sfKeyboard_isKeyPressed(sfKeyEscape))
+            if (event.type == sfEvtClosed || sfKeyboard_isKeyPressed(sfKeyEscape))
                 sfRenderWindow_close(window);
         }
       sfRenderWindow_display(window);
@@ -86,3 +89,79 @@ Let go to a new step. You wanna create a game. Let make first a simple window.
   }
   
 ```
+
+You can compile this code with `gcc` and the flags `-lcsfml-graphics` and `-lcsfml-window`. If you launched it, you will see a black window. Simple and basics.
+
+### Explanation
+
+Let explain this pretty code you compile.
+
+```c
+  #include <SFML/Graphics.h>
+  #include <SFML/Config.h>
+  #include <SFML/Audio.h>
+  #include <SFML/System.h>
+```
+
+Those lines refer to the main include you will use for all your Epitech project. It contains all you need for graphic, sound, manage user key input, etc....
+
+```c
+sfRenderWindow *create_window(unsigned int width,
+                              unsigned int height, char const *title)
+  {
+    sfRenderWindow *Window;
+    sfVideoMode mode;
+
+    mode.width = width;
+    mode.height = height;
+    mode.bitsPerPixel = 32;
+    Window = sfRenderWindow_create(mode, title, sfResize | sfClose, NULL);
+    return (Window);
+  }
+```
+
+This function will be very useful through all the MUL projects you will build this year. It take in parameters the width, the height and the title of the screen. Inside, ``sfRenderWindow *Window`` refers to the window where all the game will be played, ``sfVideoMode mode`` refers to the screen's configuration (the width, the height and the number of bits per pixel which inpact the global window's resolution). 
+
+```c
+    sfRenderWindow *window = create_window(800, 600, "CSFML");
+    sfEvent event;
+```
+
+I guess you can understand that... Don't be stupid :smirk:!
+
+```c
+  while (sfRenderWindow_isOpen(window))
+```
+
+This is the main loop of the game, which run while window is not closed. It can be replace also by ``while(running)`` with running a boolean value set to *true*. Close the window is so the same as set ``running`` to *false*.
+
+```c
+sfRenderWindow_clear(window, sfBlack);
+```
+
+This line allows screen to refresh every time all the actions you declare in the game loop ended. It make sure you will not have an error in your displaying. It also provide a way to set a custom background color.
+
+```c
+while (sfRenderWindow_pollEvent(window, &event))
+```
+
+It this loop, you will be able to handle every event which should happens at least one time such collision, user input and may other things.
+
+```c
+if (event.type == sfEvtClosed || sfKeyboard_isKeyPressed(sfKeyEscape))
+                sfRenderWindow_close(window);
+```
+
+This condition is just : "*If the event which happens is sfEvtClosed (if the user want to close the window by clicking on the red cross button on the top of your window), close the game's render window.*"
+
+```c
+sfRenderWindow_display(window);
+```
+
+This line allows you to continue to display the game's window as the game is going on.
+
+```c
+sfRenderWindow_destroy(window);
+```
+
+This line free the resources allocated to display the window. It is a **VERY IMPORTANT STEP**. It makes your program more stable and able to run with much amount of variables and data. 
