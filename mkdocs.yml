@@ -1,6 +1,6 @@
 site_name: EPITECH Documentation
 repo_url: https://github.com/epitools2024/epitech-documentation.git
-site_description: "All the documents you will use at EPITECH"
+site_description: "All you will use at EPITECH"
 site_author: epitools2024
 
 theme:
@@ -10,32 +10,32 @@ theme:
         next: 78
         previous: 80
         search: 83
-    extra_css:
 
 nav:
-    - Home: index.md
+    - ABOUT EPITECH:
+        - Epitech PEDAGOGY: about_epitech/epitech.md
+        - Links & Documents: about_epitech/links_docs.md
     - INSTALLATION & CONFIGURATIONS:
         - Windows + Linux Distro: install_config/dual_boot.md
         - EPITECH DUMP: install_config/dump.md
     - TOOLS CHEATSHEET:
-        - git: tools_cheatsheet/git.md
-        - csfml: tools_cheatsheet/csfml.md
-        - ncurses: tools_cheatsheet/ncurses.md
-        - blih: tools_cheatsheet/blih.md
-        - emacs: tools_cheatsheet/emacs.md
-        - vim: tools_cheatsheet/vim.md
+        - Blih: tools_cheatsheet/blih.md
+        - Emacs: tools_cheatsheet/emacs.md
+        - Git: tools_cheatsheet/git.md
         - Makefile: tools_cheatsheet/makefile.md
+        - Csfml Library: tools_cheatsheet/csfml.md
+        - Ncurses Library: tools_cheatsheet/ncurses.md
     - C PROGRAMMING:
         - Simples functions: c_programming/functions.md
         - Your library: c_programming/libmy.md
         - Unit Test: c_programming/unit_test.md
-    - ABOUT:
-        - EPITOOLS: about/epitools.md
-        - Contribution: about/contribution.md
-    - LICENSE: license.md
+    - ABOUT US:
+        - EPITOOLS: about_us/epitools.md
+        - Contribution: about_us/contribution.md
+        - LICENSE: about_us/license.md
 
 markdown_extensions:
     - toc:
         baselevel: 2
 
-copyright: EPITOOLS
+copyright: EPITOOLS 2024
