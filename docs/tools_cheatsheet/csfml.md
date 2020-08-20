@@ -174,3 +174,7 @@ The right way to use the documentation... That is a great deal to handle this ye
 The first thing you have to handle is the logic of the documentation. All the ``.h`` files located in the ***File***  tab. If you're looking for some functions about audio management, you have to search the `Audio.h` file documentation. And if you need something about sprite handling: `Sprite.h`, about keyboard management: `Keyboard.h`.
 By doing this you'll be able to easily find your way through this documentation.
 Other tips: **Take time to read it**. It is not difficult. And if you take time just to understand the way everything is going on through this docs, you'll easily be able to understand a lot about 2D game's logic.
+
+## *More tips and help*
+
+If you want more tricks about CSFML... Don't hesitate to visit [CleanSFML](https://github.com/NemesisX1/CleanSFML) project.
