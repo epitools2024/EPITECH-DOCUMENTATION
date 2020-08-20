@@ -120,7 +120,7 @@ sfRenderWindow *create_window(unsigned int width,
   }
 ```
 
-This function will be very useful through all the MUL projects you will build this year. It take in parameters the width, the height and the title of the screen. Inside, ``sfRenderWindow *Window`` refers to the window where all the game will be played, ``sfVideoMode mode`` refers to the screen's configuration (the width, the height and the number of bits per pixel which inpact the global window's resolution). 
+This function will be very useful through all the MUL projects you will build this year. It take in parameters the width, the height and the title of the screen. Inside, ``sfRenderWindow *Window`` refers to the window where all the game will be played, ``sfVideoMode mode`` refers to the screen's configuration (the width, the height and the number of bits per pixel which impact the global window's resolution).
 
 ```c
     sfRenderWindow *window = create_window(800, 600, "CSFML");
@@ -164,4 +164,12 @@ This line allows you to continue to display the game's window as the game is goi
 sfRenderWindow_destroy(window);
 ```
 
-This line free the resources allocated to display the window. It is a **VERY IMPORTANT STEP**. It makes your program more stable and able to run with much amount of variables and data. 
+This line free the resources allocated to display the window. It is a **VERY IMPORTANT STEP**. It makes your program more stable and able to run with much amount of variables and data.
+
+## How to use correctly the documentation
+
+There is no tutorial about CSFML on internet. The only one you will find is an portuguese video tutorial about it. But it still a few useless when you look at the amount of work you will have to achieve.
+The right way to use the documentation... That is a great deal to handle this year in graphical programming... 5 credits for the first semester and 9 for the second one. So I will give you some tips about it.
+The first thing you have to handle is the logic of the documentation. All the ``.h`` files located in the ***File***  tab. If you're looking for some functions about audio management, you have to search the `Audio.h` file documentation. And if you need something about sprite handling: `Sprite.h`, about keyboard management: `Keyboard.h`.
+By doing this you'll be able to easily find your way trough this documentation.
+Other tips: **Take time to read it**. It is not difficult. And if you take time just to understand the way everything is going on through this docs, you'll easily be able to understand a lot about 2D game's logic.
