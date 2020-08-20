@@ -2,7 +2,7 @@
 
 ## *Understand the game*
 
-A 2D game is mainly a king of program which generally follow a guideline.
+A 2D game is mainly a kind of program which generally follow a guideline.
 It is made with 3 main parts:
 
 - *Initialization*
@@ -14,7 +14,7 @@ But we will describe the two others parts.
 
 - ***Initialization***
 
-    In this part you load in the memory all the component you want to use inside your game loop.
+    In this part you load in memory all the component you want to use inside your game loop.
     You have to initialize the variables you want to use with the right element, sprite, sound, image, text, all your asset and whatever you want to use inside the game.
     It is also here you will fix the position of your assets (for example you will set the positions of all the assets, probably decide if you want to play the main sound of your game as soon as the game start).
     It is important to do this part before the game loop.
@@ -24,13 +24,13 @@ But we will describe the two others parts.
 - ***Game loop***
 
     The game loop is the main part of the game. It is here you will implement the game logic, manage events and also where you will draw the assets.
-    By game logic, I mean all the game "itself". It is here you will define how the player will move, how the score will be displayed, what will happen if you click on "Play", etc...
-    It is here where you will define whatever should happens according to the events. An event could be a keyboard input, the collision between two objects, check when a click happens and others things as it.
+    By game logic, I mean all the game "itself". It is here you will define how the player will move, how the score will be displayed, what will happen if the player clicks on "Play" button, etc...
+    It is here where you will define whatever should happen according to events. An event could be a keyboard input, collision between two objects, when a click happens and others such things.
     So the game loop is divided in three parts:
 
-  - event loop : where you manage all the events   which will happen in the game ,
+  - event loop : where you manage all the events which will happen in the game ,
 
-  - update : where live the game logic ,
+  - update : where live the game logic,
 
   - drawing : the part where you draw all the asset you want in the game.
 
@@ -40,7 +40,7 @@ But we will describe the two others parts.
 
 - ***Free resources***
 
-  It this part you free (is necessary because it depends on your programming language) the all the memory you should have used in your game
+  In this part you free (if necessary.. because it depends on your programming language) the all the memory you should have used in your game
 
 ---
 
@@ -60,8 +60,7 @@ Let go to a new step. You wanna create a game. Let make first a simple window.
   #include <SFML/Audio.h>
   #include <SFML/System.h>
 
-  sfRenderWindow *create_window(unsigned int width,
-                              unsigned int height, char const *title)
+  sfRenderWindow *create_window(unsigned int width, unsigned int height, char const *title)
   {
     sfRenderWindow *Window;
     sfVideoMode mode;
@@ -90,11 +89,12 @@ Let go to a new step. You wanna create a game. Let make first a simple window.
   
 ```
 
-You can compile this code with `gcc` and the flags `-lcsfml-graphics` and `-lcsfml-window`. If you launched it, you will see a black window. Simple and basics.
+Put this code inside a file, ``file_name.c``.
+You can compile this code with `gcc file_name.c -lcsfml-graphics -lcsfml-window`. If you launched it, you will see a black window. Simple and basic.
 
 ### Explanation
 
-Let explain this pretty code you compile.
+Let explain this pretty code you've compiled.
 
 ```c
   #include <SFML/Graphics.h>
@@ -103,7 +103,7 @@ Let explain this pretty code you compile.
   #include <SFML/System.h>
 ```
 
-Those lines refer to the main include you will use for all your Epitech project. It contains all you need for graphic, sound, manage user key input, etc....
+Those lines refer to the main include you will use for all your Epitech game project. It contains all you need for graphic, sound, manage user key input, etc....
 
 ```c
 sfRenderWindow *create_window(unsigned int width,
@@ -166,10 +166,11 @@ sfRenderWindow_destroy(window);
 
 This line free the resources allocated to display the window. It is a **VERY IMPORTANT STEP**. It makes your program more stable and able to run with much amount of variables and data.
 
-## How to use correctly the documentation
+## *How to use correctly the documentation*
 
-There is no tutorial about CSFML on internet. The only one you will find is an portuguese video tutorial about it. But it still a few useless when you look at the amount of work you will have to achieve.
+There is no tutorials about CSFML on internet.
+The only one you will find is an portuguese video tutorial about it. But it still a few useless when you look at the amount of work you will have to achieve.
 The right way to use the documentation... That is a great deal to handle this year in graphical programming... 5 credits for the first semester and 9 for the second one. So I will give you some tips about it.
 The first thing you have to handle is the logic of the documentation. All the ``.h`` files located in the ***File***  tab. If you're looking for some functions about audio management, you have to search the `Audio.h` file documentation. And if you need something about sprite handling: `Sprite.h`, about keyboard management: `Keyboard.h`.
-By doing this you'll be able to easily find your way trough this documentation.
+By doing this you'll be able to easily find your way through this documentation.
 Other tips: **Take time to read it**. It is not difficult. And if you take time just to understand the way everything is going on through this docs, you'll easily be able to understand a lot about 2D game's logic.
