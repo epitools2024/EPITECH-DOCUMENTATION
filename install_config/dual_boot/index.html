@@ -32,6 +32,9 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Installations and configurations", url: "#_top", children: [
+              {title: "Installations", url: "#installations" },
+          ]},
         ];
 
     </script>
@@ -78,7 +81,30 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    
+    <h2 id="installations-and-configurations">Installations and configurations</h2>
+<h3 id="installations">Installations</h3>
+<p>At Epitech you will be provided at the beginning of the year with a PC with <strong>1 TB</strong> (Terabyte) of memory and <strong>8 GB</strong> of RAM storage. As operating system Epitech will offer you <strong>fedora</strong> and <strong>windows</strong> to install.
+Here we are going to see together step by step how to install in <strong>dual boot</strong> the Windows and linux systems (debian or fedora). Without further ado we will start by installing windows 10.</p>
+<h4 id="windows">Windows</h4>
+<p><img alt="Screenshot" src="../../img/windows_10_material-wallpaper-1366x768.jpg" /></p>
+<p>Windows is a range of full-fledged operating systems produced by Microsoft for PCs.
+We will start with the installation of Windows. You are going to wonder why Windows first? Well It is because of the <strong>Grub</strong> which is a computer boot program, its role is to organize the loading of the operating systems installed on the computer; it allows you to choose when booting the system on which you want to boot. The Windows Grub cannot allow us to see all the systems which are installed on the pc whereas a linux system does. By default the computer starts on the system grub installed in the last position, which then justifies the choice of the installation order which is: Windows first then comes the linux distribution that we want to install. An example of Grub:</p>
+<p><strong>Fedora's grub</strong>
+<img alt="Screenshot" src="../../img/vrai_grub.jpg" /></p>
+<p>First of all before starting the installation of windows you must first do what is called booting a key on windows (ie booting the usb key with the iso of windows 10). Epitech will provide you with a key already booting on Windows but in the event that you do not have a key already booting on Windows it is then up to you to boot a key (at least 8 GB).</p>
+<h5 id="step-1">Step 1</h5>
+<p>Insert the key in the pc and start the pc set the language and you will see a window like the one below, click on <strong>install now</strong>
+<img alt="Screenshot" src="../../img/install.jpg" /></p>
+<h5 id="step-2">Step 2</h5>
+<p>This is to enter an activation key that allows you to activate your Windows. The activation key is from Epitech is:
+<img alt="Screenshot" src="../../img/cl%C3%A9_d%27activation.png" /></p>
+<h5 id="step-3">Step 3</h5>
+<p>We are now at the most important part, partitioning the hard drive. I remind you that I said at the beginning that we want to install two dual-boot systems on the pc. We will then divide the disk into two large partitions. To do this :</p>
+<pre><code>1. Click on **new**;
+2. Enter the value of the new partition in bytes and validate;
+3. choose the partition and click **next** and the partitions will be created automatically.
+</code></pre>
+<p><img alt="Screenshot" src="../../img/screen-installer-5.png" /></p>
 
   <br>
     
