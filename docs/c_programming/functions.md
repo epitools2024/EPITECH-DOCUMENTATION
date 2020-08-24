@@ -1,0 +1,1 @@
+Some useful functions at epitech, workshoplib

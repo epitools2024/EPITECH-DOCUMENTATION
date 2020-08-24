@@ -30,3 +30,8 @@ Now, BLIH is ready to be used.
 You can also use this script in python for a good user experience
 
 Thanks to blih tool.
+
+You can also use ezblih
+Install ezblih with npm (install npm if you don't have it)
+Configure ezblih correctly
+use ezblih instead of blih. More efficient

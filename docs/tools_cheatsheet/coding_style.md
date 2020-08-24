@@ -1,0 +1,1 @@
+Some tools to check if the coding style is good and how to fix it if not
