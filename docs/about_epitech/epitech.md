@@ -13,14 +13,14 @@ The five-year course at Epitech is divided into two cycles:
 
 The 1st cycle, or Bachelor cycle, lasts 3 years :
 
-- Fundamentals,
-- Consolidation,
-- Mastery.
+- Fundamentals
+- Consolidation
+- Mastery
 
 The 2nd cycle, or Expertise cycle, lasts 2 years :
 
-- Internationalization,
-- Expertise.
+- Internationalization
+- Expertise
 
 ## Campus
 
@@ -28,22 +28,21 @@ The 2nd cycle, or Expertise cycle, lasts 2 years :
 
 ### The 1ST Cycle: three years for the epitech bachelor degree
 
-The most noticeable aspect of the first two years is without doubt the omnipresent technique, seen across numerous large-scale projects of varied complexities. In order to reach this aspired level, Epitech students are confronted with a heavy workload and demanding rigour. Over and above the purely technical aspect, this teaching method provides a real individual structure for the students. It forges their personal organisation, tests their perseverance and creates a real group work culture and collective success.
+The most noticeable aspect of the first two years is without doubt the omnipresent technique, seen across numerous large-scale projects of varied complexities. In order to reach this aspired level, Epitech students are confronted with a heavy workload and demanding rigour. Over and above the purely technical aspect, this learning method provides a real individual structure for the students. It forges their personal organisation, tests their perseverance and creates a real group work culture and collective success.
 
-By relying on the solid base put in place in the 1st and 2nd years, the 3rd year at Epitech provides a quick and easy access to many computer domains (artificial intelligence, data bases, security, advanced object orientation programme, network, and so on.)
+By relying on the solid base put in place in the 1st and 2nd years, the 3rd year at Epitech provides a quick and easy access to many computer domains (artificial intelligence, databases, security, advanced object orientation programming, network, and so on).
 
-In order to reach operational level in a company leading to the Epitech Bachelor in Information Technology, the 3rd year makes it possible to bring together the big players in the market (Microsoft, Oracle, Cisco). The bases of the economic and relations mechanisms in a business are approached so as to allow the students to gain a good understanding of the economic context (commerce, communication, marketing, finance, law, etc.)
+In order to reach operational level in a company leading to the Epitech Bachelor in Information Technology, the 3rd year makes it possible to bring together the big players in the market (Microsoft, Oracle, Cisco). The bases of the economic and relations mechanisms in a business are approached so as to allow the students to gain a good understanding of the economic context (commerce, communication, marketing, finance, law, etc).
 
 #### Three years in one of the 13 schools in France
 
-Eleves de 1re année passionés d'informatique
 Epitech has reduced its 1st cycle to allow students to do the three foundation years of the course near to their home or in the region of their choice. In this way, the three years take place equally at Epitech Paris or at one of the regional branches.
 
 **1st YEAR: FUNDAMENTALS**
-The first year starts with the “Pool” month. Learning by doing starts again normally afterwards. It is devoted to the development of applications (programming of a calculator with indefinite numbers, an assembler, a virtual machine, little games, a unix shell, and so on.) This first year provides the methodological bases and necessary reflexes to acquire a logical approach to computer science. It lays the cultural and practical fundamentals, instils the ability to work, rigour and perseverance. The aim is to put the student in front of a sophisticated exercise in programming and the immediate realisation of large-scale projects. It is learning about personal organisation and group work.
+The first year starts with the “Pool” month. Learning by doing starts again normally afterwards. It is devoted to the development of applications (programming of a calculator with infinite numbers, an assembly machine, a virtual machine, little games, unix command interpreter, and so on). This first year provides the methodological bases and necessary reflexes to acquire a logical approach to computer science. It lays the cultural and practical fundamentals, instils the ability to work, rigour and perseverance. The aim is to put the student in front of a sophisticated exercise in programming and the immediate realisation of large-scale projects. It is learning about personal organisation and group work.
 
 **2ND YEAR: CONSOLIDATION**
-The second year is centred around system and network development (written orders so as to manage the memory of a machine, development of a video game, etc.) During this year, the students develop their knowledge of languages, reinforce their logic through a deep knowledge of mathematical tools and an approach to complex systems. The students should apply technological knowledge to more complex projects and widen their vision of computer science.
+The second year is centred around system and network development (written orders so as to manage the memory of a machine, development of a video game, etc.) During this year, the students develop their knowledge of programming languages, reinforce their logic through a deep knowledge of mathematical tools and an approach to complex systems. The students should apply technological knowledge to more complex projects and widen their vision of computer science.
 
 **3RD YEAR: MASTERY**
 The third year provides the opportunity to work 2 days part-time in a company. In particular, the students devote their time to computer security. They produce viruses, try to “hack” into the school computer systems (and the same for some companies who will accept the challenge and place an order). This year, which ends the first cycle, opens up knowledge to different applied and technical domains. It provides the competences which make it possible to have an immediate value-added in a firm and allows the students to bring into play diverse learning methods in a coherent manner. Finally, the third year actively prepares the students to fully integrate into a company.
@@ -76,10 +75,9 @@ From the first day of the legendary Swimming pool, students are immersed in the 
 
 >- { Conception } et travail d'équipe
 
-It begins with a 4 to 6 month internship in a company which allows the student to put into perspective the skills acquired in the first year and to specify his professional project. Back at Epitech, the C ++ Pool then puts the students back in the code bath. Finally, two projects punctuate the rest of this 2nd year: indie studio and zappy. They constitute the realization of a real video game which integrates the graphics engines of the market and a complex simulation combining parallel programming and artificial intelligence. These projects will each be the subject of their own keynotes which will allow students to synthesize their knowledge before embarking on their own projects in the third year.
-
 ##### Les modules pédagogiques en 2ème année
 
+It begins with a 4 to 6 month internship in a company which allows the student to put into perspective the skills acquired in the first year and to specify his professional project. Back at Epitech, the C ++ Pool then puts the students back in the code bath. Finally, two projects punctuate the rest of this 2nd year: indie studio and zappy. They constitute the realization of a real video game which integrates the graphics engines of the market and a complex simulation combining parallel programming and artificial intelligence. These projects will each be the subject of their own keynotes which will allow students to synthesize their knowledge before embarking on their own projects in the third year.
 >- Tronc commun
     - développement personnel
     - anglais
