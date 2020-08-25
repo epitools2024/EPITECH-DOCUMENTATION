@@ -19,6 +19,7 @@
     - [*Emacs*](tools_cheatsheet/emacs.md)
     - [*Git*](tools_cheatsheet/git.md)
     - [*Makefile*](tools_cheatsheet/makefile.md)
+    - [*Coding style*](tools_cheatsheet/coding_style.md)
     - [*Csfml Library*](tools_cheatsheet/csfml.md)
     - [*Ncurses Library*](tools_cheatsheet/ncurses.md)
 
