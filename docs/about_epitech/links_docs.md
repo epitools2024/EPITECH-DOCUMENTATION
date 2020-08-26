@@ -1,66 +1,49 @@
-you have access of some tools with your epitech email.
-Hamidou TESSILIMI
-#9952
+# Links
 
-Hamidou TESSILIMI08/06/2020
-SITE OFFICIEL: https://epitech.eu/
-Epitech
-julien
-Epitech, l'école référente de l’expertise informatique et de l’inno...
-Quel Epitech êtes-vous ? Plutôt expertise informatique ou transformation digitale ? Faites le test et découvrez quel métier du digital est fait pour vous !
+Most of these links can only be accessed with your Office 365 credentials provided when registering for EPITECH.
 
-INTRA: https://intra.epitech.eu/
-MOULINETTE: https://my.epitech.eu/
-ENGLISH: https://www.altissia.org/
-Altissia
-Ludovic Chevalier
-Altissia - Celebrating diversity through languages
-For Education. For Institutions. For Business.
-Hamidou TESSILIMI08/06/2020
-OFFICE: https://www.office.com/
-Office 365 Login | Microsoft Office
-Collaborate for free with online versions of Microsoft Word, PowerPoint, Excel, and OneNote. Save documents, spreadsheets, and presentations online, in OneDrive. Share them with others and work together at the same time.
-GITHUB: https://education.github.com/pack
-GitHub Education
-GitHub Student Developer Pack
-The best developer tools, free for students. Get your GitHub Student Developer Pack now.
+- **OFFICIEL WEBSITE**: [https://epitech.eu/](https://epitech.eu/)
 
-VMWARE: https://www.vmware.com/products.html
-VMware
-VMware Products | Build Your Digital Foundation
-With a digital foundation built on VMware products, you can build, run, manage, connect, deliver, and protect all types of applications – everywhere. Learn how.
-JETBRAINS: https://www.jetbrains.com/
-JetBrains
-JetBrains: Developer Tools for Professionals and Teams
-JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA – the leading Java IDE, and the Kotlin programming language.
+- **INTRA**: [https://intra.epitech.eu/](https://intra.epitech.eu/)
 
-Hamidou TESSILIMI08/06/2020
-LIBRARY: http://www.scholarvox.com/
-Hamidou TESSILIMI08/06/2020
-TIMELINE: https://roslyn.epi.codes/
-EPITECH JOB TEASER: https://epitech.jobteaser.com/fr/users/sign_in
-Connexion à CAREER CENTER
-Connexion à CAREER CENTER
-Hamidou TESSILIMI08/07/2020
-EPITECH INNOVATIVE PROJECT: https://eip.epitech.eu/#/login
-EPITECH HUB: http://hub.epitech.eu/#/
-Epitech Innovation Hub
-Epitech Innovation Hub : Foster Epitech Students Creativity and Career Development
-EPITECH ALUMNI: http://epitech-alumni.org/
-Association Alumni Epitech
-epialu
-EPITECH Alumni - l'association des anciens Epitech
-L’Alumni Epitech a pour mission de fédérer les anciens et de les promouvoir professionnellement via les mises en relation, le partage d’opportunités.
+- **Nao Marvin**: [https://my.epitech.eu/](https://my.epitech.eu/)
 
-International Epitech platform: https://tekfeed.epitech.eu/#/
--CUSTOMER VALUE-
--CUSTOMER VALUE-
--CUSTOMER VALUE
+- **ENGLISH**: [https://www.altissia.org/](https://www.altissia.org/)
 
-EPITECH DOCUMENTATION: https://epitech-2022-technical-documentation.readthedocs.io/en/latest/#
-EPITECH PROJECT: https://github.com/epitools2024/EPITECH_PROJECTS.git
-GitHub
-epitools2024/EPITECH_PROJECTS
-List of all Projects at EPITECH. Contribute to epitools2024/EPITECH_PROJECTS development by creating an account on GitHub.
+- **OFFICE**: [https://www.office.com/](https://www.office.com/)
 
-EPITECH CHEAT_SHEET: https://github.com/epitools2024/EPITECH-CHEAT_SHEET.git
+- **GITHUB**: [https://education.github.com/pack](https://education.github.com/pack)
+
+- **VMWARE**: [https://www.vmware.com/products.html](https://www.vmware.com/products.html)
+
+- **JETBRAINS**: [https://www.jetbrains.com/](https://www.jetbrains.com/)
+
+- **LIBRARY**: [http://www.scholarvox.com/](http://www.scholarvox.com/)
+
+- **TIMELINE AND MIRROR FOR YOUR PROJECTS**: [https://roslyn.epi.codes/](https://roslyn.epi.codes/)
+
+- **EPITECH JOB TEASER**: [https://epitech.jobteaser.com/fr/users/sign_in](https://epitech.jobteaser.com/fr/users/sign_in)
+
+- **EPITECH INNOVATIVE PROJECT**: [https://eip.epitech.eu/#/login](https://eip.epitech.eu/#/login)
+
+- **EPITECH HUB**: [http://hub.epitech.eu/#/](http://hub.epitech.eu/#/)
+
+- **EPITECH ALUMNI**: [http://epitech-alumni.org/](http://epitech-alumni.org/)
+
+- **International Epitech platform**: [https://tekfeed.epitech.eu/#/](https://tekfeed.epitech.eu/#/)
+
+- **EPITECH DOCUMENTATION**: [https://epitech-2022-technical-documentation.readthedocs.io/en/latest/#](https://epitech-2022-technical-documentation.readthedocs.io/en/latest/#)
+
+- **EPITECH PROJECT**: [https://github.com/epitools2024/EPITECH_PROJECTS.git](https://github.com/epitools2024/EPITECH_PROJECTS.git)
+
+- **EPITECH DOCUMENTATION**: [https://github.com/epitools2024/EPITECH-DOCUMENTATION.git](https://github.com/epitools2024/EPITECH-DOCUMENTATION.git)
+
+- **EPITECH API DOCUMENTATION**: [Epitech API](https://gist.github.com/demaisj/45a210a4ae13dc0b45dfbbdcf7d9a852)
+
+- **IONIS EDUCATION GROUP**: [IONIS EDUCATION GROUP](https://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?cmi_cs=1&cmi_mnuMain=2027b68c-8d6a-e911-8115-000d3af41938&ws=1174c4f8-8a6f-e011-971f-0030487d8897&vsro=8)
+
+# Documents
+
+Here you will find a list of important documents which will be useful to you during your course.
+
+[https://intra.epitech.eu/file/public/](https://intra.epitech.eu/file/public/)
