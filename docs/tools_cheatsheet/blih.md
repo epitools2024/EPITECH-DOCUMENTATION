@@ -35,3 +35,59 @@ You can also use ezblih
 Install ezblih with npm (install npm if you don't have it)
 Configure ezblih correctly
 use ezblih instead of blih. More efficient
+
+EZ Blih
+Installation de Blih via NPM sans aucune dépendance (pas de python, full JS).
+
+Installation
+Pre-requis
+NodeJS - Version 8 Minimum
+Je ne vais pas faire un tuto pour installer Node. Sous Windows / Mac c’est un simple installer, sous Linux utilisez le gestionnaire de paquet de votre distribution.
+
+Installer le package en global
+sudo npm i -g ezblih
+Upload cle ssh
+ssh-keygen
+(Presser 3 fois Enter)
+
+ezb upload
+Commandes
+ezb [commande]
+Commandes disponnibles :
+
+upload
+list
+ping
+create nom_du_depot
+setacl nom_du_depot user droits
+getacl nom_du_depot
+delete nom_du_depot
+clone nom_du_depot
+Configuration
+Si vous êtes un gros flemmard et que vous ne souhaitez plus taper votre email et mot de passe a chaque commande, vous pouvez créer un fichier .env dans un dossier ezblih que vous aurez également créé dans votre repertoire home.
+
+~/ezblih/.env
+
+Remplissez ensuite le fichier .env avec comme contenu :
+
+BLIH_EMAIL=votre.email@epitech.eu
+BLIH_PASSWORD=votremdp
+Il est possible de renseigner uniquement le mail, dans ce cas seulement le mot de passe vous sera demandé.
+
+Mise à jour
+sudo npm update -g ezblih
+
+Les projets rendus à travers blih ou rendu peuvent simplement être récupéré par un étudiant.
+
+La commande blih peut lister les dépôts avec blih repository list. Il est ensuite possible de cloner ce dépôt avec la commande git clone $USER@git.epitech.eu:/$USER/depot.
+
+Un simple script permet de récupérer les anciens rendus :
+
+for repo in `blih repository list`; do
+    git clone $USER@git.epitech.eu:/$USER/$repo;
+done
+Ce script récupère tous les dépôts présents sur blih dans le répertoire courant. Cette procédure peut donc prendre un certain temps.
+
+https://www.npmjs.com/package/blih
+
+https://blih.saumon.io/

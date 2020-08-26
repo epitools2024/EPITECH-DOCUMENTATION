@@ -22,6 +22,8 @@ Most of these links can only be accessed with your Office 365 credentials provid
 
 - **TIMELINE AND MIRROR FOR YOUR PROJECTS**: [https://roslyn.epi.codes/](https://roslyn.epi.codes/)
 
+- **BLIH WEB**: [https://blih.saumon.io/](https://blih.saumon.io/)
+
 - **EPITECH JOB TEASER**: [https://epitech.jobteaser.com/fr/users/sign_in](https://epitech.jobteaser.com/fr/users/sign_in)
 
 - **EPITECH INNOVATIVE PROJECT**: [https://eip.epitech.eu/#/login](https://eip.epitech.eu/#/login)
