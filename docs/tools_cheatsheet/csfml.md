@@ -1,4 +1,4 @@
-# How to understand and start 2D game :robot:
+# How to understand and start 2D game 👾
 
 ## *Understand the game*
 
@@ -44,7 +44,6 @@ But we will describe the two others parts.
 
 ---
 
-:smirk:
 This just an overview of the organization of a video game project. It may change depend on the game engine and barely of the framework you use.
 So feel free to follow the way you want to follow
 
