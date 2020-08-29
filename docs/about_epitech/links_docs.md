@@ -44,7 +44,6 @@ Most of these links can only be accessed with your Office 365 credentials provid
 
 - **IONIS EDUCATION GROUP**: [IONIS EDUCATION GROUP](https://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?cmi_cs=1&cmi_mnuMain=2027b68c-8d6a-e911-8115-000d3af41938&ws=1174c4f8-8a6f-e011-971f-0030487d8897&vsro=8)
 
-- **LINUX NEWS on Telegram**: [Link to LINUXGRAM](https://t.me/linuxgram)
 # Documents
 
 Here you will find a list of important documents which will be useful to you during your course.

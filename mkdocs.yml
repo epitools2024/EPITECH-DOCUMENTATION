@@ -20,8 +20,8 @@ nav:
         - EPITECH DUMP: install_config/dump.md
     - TOOLS CHEATSHEET:
         - Blih: tools_cheatsheet/blih.md
-        - Emacs: tools_cheatsheet/emacs.md
         - Git: tools_cheatsheet/git.md
+        - Emacs: tools_cheatsheet/emacs.md
         - Makefile: tools_cheatsheet/makefile.md
         - Coding Style: tools_cheatsheet/coding_style.md
         - Csfml Library: tools_cheatsheet/csfml.md

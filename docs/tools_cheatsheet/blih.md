@@ -22,72 +22,112 @@ You can see in this folder (~/.ssh), there are two files.
 Now all you have to do is link your ssh key to blih by using this command, and enter your UNIX password (Epitech Password)
 
 ```
-$ blih -u "prenom.nom@epitech.eu" sshkey upload ~/.ssh/id_rsa.pub
+$ blih -u "surname.name@epitech.eu" sshkey upload ~/.ssh/id_rsa.pub
 ```
 
 Now, BLIH is ready to be used.
 
-You can also use this script in python for a good user experience
+You can create a repository using:
 
-Thanks to blih tool.
+```
+$ blih -u "surname.name@epitech.eu" repository create repo_name
+```
+
+To give read permissions to Nao Marvin
+
+```
+$ blih -u "surname.name@epitech.eu" repository setacl repo_name ramassage_tek r
+```
+
+If you work with another person in the project, you can give him person using:
+
+```
+$ blih -u "surname.name@epitech.eu" repository setacl repo_name hisSurname.hisName@epitech.eu rwx
+```
+
+Note that r is for read, w for write et x for excute.
+
+If you want to see who has permissions in your repo, you can type:
+
+```
+$ blih -u "surname.name@epitech.eu" repository getacl repo_name
+```
+
+If you want to delete a repo,
+
+```
+$ blih -u "surname.name@epitech.eu" repository delete repo_name
+```
+There are other commands, you can type
+
+```
+$ blih -h
+```
+
+---
 
 You can also use ezblih
-Install ezblih with npm (install npm if you don't have it)
-Configure ezblih correctly
-use ezblih instead of blih. More efficient
 
-EZ Blih
-Installation de Blih via NPM sans aucune dépendance (pas de python, full JS).
+For that, you need node and npm. You can install it here depending on your os. [Node Installer](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages)
 
-Installation
-Pre-requis
-NodeJS - Version 8 Minimum
-Je ne vais pas faire un tuto pour installer Node. Sous Windows / Mac c’est un simple installer, sous Linux utilisez le gestionnaire de paquet de votre distribution.
+To install ezblih,
 
-Installer le package en global
-sudo npm i -g ezblih
-Upload cle ssh
-ssh-keygen
-(Presser 3 fois Enter)
+```
+$ sudo npm i -g ezblih
+```
 
-ezb upload
-Commandes
-ezb [commande]
-Commandes disponnibles :
+Upload your ssh-keygen with
+
+```
+$ ssh-keygen
+```
+
+and press Enter 3 times.
+Then, type,
+
+```
+$ ezb upload
+```
+
+The command that you can use with ezb are not different with the blih command. It's just more simple
+
+Vous pouvez faire les memes actions que précédemment en utilisant les commandes ci-dessous. ezblih fera le travail pour vous.
 
 upload
+
 list
+
 ping
-create nom_du_depot
-setacl nom_du_depot user droits
-getacl nom_du_depot
-delete nom_du_depot
-clone nom_du_depot
-Configuration
+
+create repo_name
+
+setacl repo_name user droits
+
+getacl repo_name
+
+delete repo_name
+
 Si vous êtes un gros flemmard et que vous ne souhaitez plus taper votre email et mot de passe a chaque commande, vous pouvez créer un fichier .env dans un dossier ezblih que vous aurez également créé dans votre repertoire home.
 
 ~/ezblih/.env
 
 Remplissez ensuite le fichier .env avec comme contenu :
 
-BLIH_EMAIL=votre.email@epitech.eu
-BLIH_PASSWORD=votremdp
+    BLIH_EMAIL=votre.email@epitech.eu
+    BLIH_PASSWORD=votremdp
+
 Il est possible de renseigner uniquement le mail, dans ce cas seulement le mot de passe vous sera demandé.
 
-Mise à jour
-sudo npm update -g ezblih
-
-Les projets rendus à travers blih ou rendu peuvent simplement être récupéré par un étudiant.
-
-La commande blih peut lister les dépôts avec blih repository list. Il est ensuite possible de cloner ce dépôt avec la commande git clone $USER@git.epitech.eu:/$USER/depot.
+---
 
 Un simple script permet de récupérer les anciens rendus :
 
+```bash
 for repo in `blih repository list`; do
     git clone $USER@git.epitech.eu:/$USER/$repo;
 done
+```
+
 Ce script récupère tous les dépôts présents sur blih dans le répertoire courant. Cette procédure peut donc prendre un certain temps.
 
-https://www.npmjs.com/package/blih
-
-https://blih.saumon.io/
+Vous pouvez également accéder à tous vos repos sur ce site [Blih Web](https://blih.saumon.io/)

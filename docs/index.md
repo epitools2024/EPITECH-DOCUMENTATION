@@ -16,8 +16,8 @@
 * **[III. TOOLS CHEATSHEET](tools_cheatsheet/git.md)**
 
     - [*Blih*](tools_cheatsheet/blih.md)
-    - [*Emacs*](tools_cheatsheet/emacs.md)
     - [*Git*](tools_cheatsheet/git.md)
+    - [*Emacs*](tools_cheatsheet/emacs.md)
     - [*Makefile*](tools_cheatsheet/makefile.md)
     - [*Coding style*](tools_cheatsheet/coding_style.md)
     - [*Csfml Library*](tools_cheatsheet/csfml.md)
