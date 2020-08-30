@@ -1,8 +1,4 @@
-# And God make Makefile 💆
-
-## Simple Makefile
-
-A simple Makefile.
+**A simple Makefile**
 
 ```makefile
     CC	=	gcc
@@ -37,7 +33,9 @@ A simple Makefile.
     .PHONY:	fclean clean re
 ```
 
-## Graphical Makefile Template
+---
+
+**Graphical Makefile Template**
 
 In this template I have a folder named *src* where is located all my *.c* file except the *main.c* which is root located.
 The *$(shell find src/ -name '*.c')* means to Makefile to find all the *.c* files which are located in the folder *src* including all the sub directory inside it.
