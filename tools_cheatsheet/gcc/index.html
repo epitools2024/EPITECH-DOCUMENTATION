@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Emacs - EPITECH Documentation</title>
+    <title>Gcc - EPITECH Documentation</title>
     <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../../css/base.css" rel="stylesheet">
@@ -57,20 +57,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../gcc/" class="btn btn-xs btn-default pull-right">
+      <a href="../makefile/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../gcc/" class="btn btn-xs btn-link">
-        Gcc
+      <a href="../makefile/" class="btn btn-xs btn-link">
+        Makefile
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../git/" class="btn btn-xs btn-default pull-left">
+      <a href="../emacs/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../git/" class="btn btn-xs btn-link">
-        Git
+        Previous</a><a href="../emacs/" class="btn btn-xs btn-link">
+        Emacs
       </a>
     </div>
     
@@ -78,46 +78,40 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <p><img alt="Emacs Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Emacs-logo.svg/299px-Emacs-logo.svg.png" /></p>
-<p>At Epitech, the default text editor is our good old emacs. However, Visual Studio Code is interfering in our relationship with emacs and is taking over from its many extensions and style.</p>
-<p>If you have used the <a href="https://github.com/kayofeld/script-installation-ordinateur-epitech">kayofeld script</a>, you are a <code>winner</code>.</p>
-<p>For the installation of emacs with Epitech configuration, you can use the script available in this github repository <a href="https://github.com/Epitech/epitech-emacs">Epitech-emacs</a>.</p>
-<p>Clone the repo with:</p>
-<pre><code class="bash">$ git clone https://github.com/Epitech/epitech-emacs.git
-</code></pre>
-
-<p>For local installation, run:</p>
-<pre><code class="bash">$ ./INSTALL.sh local
-</code></pre>
-
-<p>For system-wide installation, run:</p>
-<pre><code class="bash">$ sudo ./INSTALL.sh system
-</code></pre>
-
-<p>There is an emacs configuration allowing you to avoid some standard errors present in the coding style. Download the following file.</p>
-<p><a href="https://drive.google.com/file/d/1xucTjjVgb0F9hEb2pXG5hPfrkKzpS65q/view?usp=sharing" title="Epitech Emacs Config">Emacs Congifuration</a></p>
-<p>Put it in your home. Rename it to <code>.emacs</code>.</p>
-<p>Emacs Shortcuts:</p>
-<ul>
-<li>
-<p><code>Ctrl</code> <code>C</code> + <code>Ctrl</code> <code>H</code>: Project name and description</p>
-</li>
-<li>
-<p><code>Ctrl</code> <code>Z</code>: Suspending emacs (<code>fg</code> will resume the suspended job)</p>
-</li>
-<li>
-<p><code>Ctrl</code> <code>X</code> + <code>Ctrl</code> <code>S</code>: Save</p>
-</li>
-<li>
-<p><code>Ctrl</code> <code>X</code> + <code>S</code>: Save all files</p>
-</li>
-<li>
-<p><code>Ctrl</code> <code>X</code> + <code>Ctrl</code> <code>C</code>: Quit</p>
-</li>
-<li>
-<p><code>Ctrl</code> <code>C</code> + <code>Ctrl</code> <code>Q</code>: Auto Indent</p>
-</li>
+    <ul>
+<li>Compile your project with:</li>
 </ul>
+<pre><code class="bash">$ gcc file.c
+</code></pre>
+
+<ul>
+<li>You can compile multiple file with:</li>
+</ul>
+<pre><code class="bash">$ gcc file1.c file2.c
+</code></pre>
+
+<p>This method with create a default name for your binary <code>a.out</code></p>
+<ul>
+<li>If you want a specific name, you can use:</li>
+</ul>
+<pre><code class="bash">$ gcc file.c -o your_binary_name
+</code></pre>
+
+<ul>
+<li>Include a headers file directory</li>
+</ul>
+<pre><code class="bash">$ gcc file.c -I ./include
+</code></pre>
+
+<ul>
+<li>Include a library directory</li>
+</ul>
+<pre><code class="bash">$ gcc file.c -L ./lib/my -l libmy
+</code></pre>
+
+<p>You can use some flags to prevent warning in your code</p>
+<p><code>Wall</code> <code>Werror</code> <code>Wextra</code></p>
+<p>Type <code>man gcc</code> to find more info about it</p>
 
   <br>
     
@@ -130,20 +124,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../gcc/" class="btn btn-xs btn-default pull-right">
+      <a href="../makefile/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../gcc/" class="btn btn-xs btn-link">
-        Gcc
+      <a href="../makefile/" class="btn btn-xs btn-link">
+        Makefile
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../git/" class="btn btn-xs btn-default pull-left">
+      <a href="../emacs/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../git/" class="btn btn-xs btn-link">
-        Git
+        Previous</a><a href="../emacs/" class="btn btn-xs btn-link">
+        Emacs
       </a>
     </div>
     
@@ -154,7 +148,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/tools_cheatsheet/emacs.md"><i class="fa fa-github"></i>
+        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/tools_cheatsheet/gcc.md"><i class="fa fa-github"></i>
 Edit on GitHub</a>
       </p><p>EPITOOLS 2024</p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
