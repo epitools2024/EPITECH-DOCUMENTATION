@@ -32,6 +32,10 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "And God make Makefile \ud83d\udc86", url: "#_top", children: [
+              {title: "Simple Makefile", url: "#simple-makefile" },
+              {title: "Graphical Makefile Template", url: "#graphical-makefile-template" },
+          ]},
         ];
 
     </script>
@@ -57,20 +61,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../csfml/" class="btn btn-xs btn-default pull-right">
+      <a href="../coding_style/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../csfml/" class="btn btn-xs btn-link">
-        Csfml Library
+      <a href="../coding_style/" class="btn btn-xs btn-link">
+        Coding Style
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../git/" class="btn btn-xs btn-default pull-left">
+      <a href="../emacs/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../git/" class="btn btn-xs btn-link">
-        Git
+        Previous</a><a href="../emacs/" class="btn btn-xs btn-link">
+        Emacs
       </a>
     </div>
     
@@ -78,7 +82,77 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    
+    <h2 id="and-god-make-makefile">And God make Makefile 💆</h2>
+<h3 id="simple-makefile">Simple Makefile</h3>
+<p>A simple Makefile.</p>
+<pre><code class="makefile">    CC  =   gcc
+
+    NAME    =   name_of_binary
+
+    CFLAGS  =    -Wpedantic -pedantic-errors -w  -Wextra  -Wall -Iinclude
+
+    SRC =   core/my_printf.c \
+            core/save_printf.c \
+        src/my_putstr.c \
+            src/my_putchar.c    \
+                src/my_strlen.c \
+                main.c
+
+    OBJ =   $(SRC:.c=.o)
+
+    all:    $(NAME)
+
+    $(NAME):    $(OBJ)
+        $(CC) -c $(OBJ)
+        ar rc $(NAME) $(OBJ)
+
+    clean:
+        rm -f $(OBJ)
+
+    fclean: clean
+        rm -f $(NAME)
+
+    re: fclean all
+
+    .PHONY: fclean clean re
+</code></pre>
+
+<h3 id="graphical-makefile-template">Graphical Makefile Template</h3>
+<p>In this template I have a folder named <em>src</em> where is located all my <em>.c</em> file except the <em>main.c</em> which is root located.
+The <em>$(shell find src/ -name '</em>.c')<em> means to Makefile to find all the </em>.c<em> files which are located in the folder </em>src* including all the sub directory inside it.</p>
+<pre><code class="makefile">    CC  =   gcc
+
+    CSFML   +=  -lcsfml-graphics -lcsfml-window -lcsfml-audio -lcsfml-system
+
+    CFLAGS  +=  -Wpedantic -pedantic-errors -w  -Wextra  -Wall $(CSFML) -Iinc
+
+    NAME    =   name_of_the_binary
+
+    SRC =   $(shell find src/ -name '*.c')\
+        main.c
+
+    OBJ =   $(SRC:.c=.o)
+
+    all:    $(NAME)
+
+    $(NAME):    $(OBJ)
+        $(CC) $(CFLAGS) $(OBJ) $(LIB) -o $(NAME) 
+        rm -f $(OBJ) *~
+
+    clean:
+        rm -f src/*.o
+        rm -f *~ core/*~ inc/*~ src/*~
+
+    fclean: clean
+        rm -f $(NAME)
+        rm -f a.out src/a.out core/a.out a.out
+
+    re: fclean all
+
+    .PHONY: fclean  clean   re
+</code></pre>
+
+<p>Some useful flags and possibilities of customs makefile you can use</p>
 
   <br>
     
@@ -91,20 +165,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../csfml/" class="btn btn-xs btn-default pull-right">
+      <a href="../coding_style/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../csfml/" class="btn btn-xs btn-link">
-        Csfml Library
+      <a href="../coding_style/" class="btn btn-xs btn-link">
+        Coding Style
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../git/" class="btn btn-xs btn-default pull-left">
+      <a href="../emacs/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../git/" class="btn btn-xs btn-link">
-        Git
+        Previous</a><a href="../emacs/" class="btn btn-xs btn-link">
+        Emacs
       </a>
     </div>
     

@@ -57,12 +57,12 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../emacs/" class="btn btn-xs btn-default pull-right">
+      <a href="../git/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../emacs/" class="btn btn-xs btn-link">
-        Emacs
+      <a href="../git/" class="btn btn-xs btn-link">
+        Git
       </a>
     </div>
     
@@ -81,27 +81,111 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <p>The Bocal Lightweight Interface for Humans, BLIH is the EPITECH repository management tool.
 A student from the class of 2021 created a WEB interface called <a href="https://github.com/maximelouet/blih-web">BLIH web</a>.
 Throughout the school year, you're going to have to submit projects on Epitech servers.</p>
-<p>If you have used the kayofeld script, you are a winner. The script installs the BLIH and configures the necessary.
+<p>If you have used the <a href="https://github.com/kayofeld/script-installation-ordinateur-epitech">kayofeld script</a>, you are a <code>winner</code>. The script installs the BLIH and configures the necessary.
 Else, following these steps :</p>
-<ul>
-<li>Generate a new key, that is stored as a file and will allow you to authenticate yourself on the submittal system and secure the data exchanges.</li>
-</ul>
+<p>Generate a new key, that is stored as a file and will allow you to authenticate yourself on the submittal system and secure the data exchanges.</p>
 <p>Here, you will leave all of the default values by simply pressing enter each time.</p>
-<pre><code>$ ssh-keygen
+<pre><code class="bash">$ ssh-keygen
 </code></pre>
 
-<p>By default, the ssh key was generated in a file on your pc, in your home ~/.ssh/ .</p>
-<pre><code>$ ls ~/.ssh/
+<p>By default, the ssh key was generated in a file on your pc, in your home ~/.ssh/.</p>
+<pre><code class="bash">$ ls ~/.ssh/
 </code></pre>
 
 <p>You can see in this folder (~/.ssh), there are two files.</p>
 <p>Now all you have to do is link your ssh key to blih by using this command, and enter your UNIX password (Epitech Password)</p>
-<pre><code>$ blih -u &quot;prenom.nom@epitech.eu&quot; sshkey upload ~/.ssh/id_rsa.pub
+<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; sshkey upload ~/.ssh/id_rsa.pub
 </code></pre>
 
 <p>Now, BLIH is ready to be used.</p>
-<p>You can also use this script in python for a good user experience</p>
-<p>Thanks to blih tool.</p>
+<ul>
+<li>You can create a repository using:</li>
+</ul>
+<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository create repo_name
+</code></pre>
+
+<p><code>repo_name: for example, CPool_Day01_2020</code></p>
+<ul>
+<li>To give read permissions to <code>Nao Marvin</code></li>
+</ul>
+<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository setacl repo_name ramassage_tek r
+</code></pre>
+
+<ul>
+<li>If you work with another person in the project, you can give him person using:</li>
+</ul>
+<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository setacl repo_name hisSurname.hisName@epitech.eu rwx
+</code></pre>
+
+<p><code>Note that r is for read, w for write et x for excute.</code></p>
+<ul>
+<li>If you want to see who has permissions in your repo, you can type:</li>
+</ul>
+<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository getacl repo_name
+</code></pre>
+
+<ul>
+<li>If you want to delete a repo,</li>
+</ul>
+<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository delete repo_name
+</code></pre>
+
+<ul>
+<li>There are other commands, you can type</li>
+</ul>
+<pre><code class="bash">$ blih -h
+</code></pre>
+
+<p>You can find the official repo of blih <a href="https://github.com/bocal/blih">here</a>.</p>
+<hr />
+<p>You can also use ezblih</p>
+<p>For that, you need node and npm. You can install it here depending on your os. <a href="https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages">Node Installer</a></p>
+<p>To install ezblih,</p>
+<pre><code>$ sudo npm i -g ezblih
+</code></pre>
+
+<p>Upload your ssh-keygen with</p>
+<pre><code>$ ssh-keygen
+</code></pre>
+
+<p>and press <code>Enter</code> 3 times.
+Then, type,</p>
+<pre><code>$ ezb upload
+</code></pre>
+
+<p>The commands of ezblih are not very different from those of blih. It's just simpler. You can do the same actions as before using the commands below. ezblih will do the work for you. Use the following commands preceded by <code>ezblih</code>.</p>
+<p>upload</p>
+<p>create repo_name</p>
+<p>setacl repo_name user rights</p>
+<p>getacl repo_name</p>
+<p>delete repo_name</p>
+<p>If you don't want to type your email and password for each command, you can create an .env file in an ezblih folder that you also created in your home directory.</p>
+<pre><code>~/ezblih/.env
+</code></pre>
+
+<p>Then fill the <code>.env</code> file with the content :</p>
+<pre><code>BLIH_EMAIL=surname.name@epitech.eu
+BLIH_PASSWORD=your_password
+</code></pre>
+<p>It is possible to fill only the email, in this case only the password will be asked.</p>
+<p>You can find the official repo of ezblih <a href="https://github.com/Rikette/ezblih">here</a>.</p>
+<hr />
+<p>A simple script can be used to retrieve your old repo:</p>
+<p><code>Using Blih</code></p>
+<pre><code class="bash">for repo in `blih repository list`; do
+    git clone $USER@git.epitech.eu:/$USER/$repo;
+done
+</code></pre>
+
+<p><code>Using ezblih</code></p>
+<pre><code class="bash">for repo in `ezblih list`; do
+    git clone $USER@git.epitech.eu:/$USER/$repo;
+done
+</code></pre>
+
+<p><code>$USER</code> is your epitech login</p>
+<p>This script retrieves all the repositories present on blih in the current directory. This procedure can therefore take some time.</p>
+<p>You can also access all your repo on this site <a href="https://blih.saumon.io/">Blih Web</a></p>
 
   <br>
     
@@ -114,12 +198,12 @@ Else, following these steps :</p>
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../emacs/" class="btn btn-xs btn-default pull-right">
+      <a href="../git/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../emacs/" class="btn btn-xs btn-link">
-        Emacs
+      <a href="../git/" class="btn btn-xs btn-link">
+        Git
       </a>
     </div>
     
