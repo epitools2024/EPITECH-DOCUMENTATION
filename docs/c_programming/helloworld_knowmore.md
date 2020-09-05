@@ -1,0 +1,10 @@
+# Deux petits mots pour le code, un grand mythe pour l’informatique.
+
+![Logo of Hello World](https://miro.medium.com/max/700/1*OohqW5DGh9CQS4hLY5FXzA.png)
+
+« _Hello world_ » était l’exemple de phrase donnée dans le manuel d’usage The C Programming Language, pour tester une fonction. La popularité du langage et du livre a par l’usage rendu populaire l’utilisation de ces deux mots précis pour tester une fonction. Oui, mais pourquoi ces deux mots ? Et pourquoi pas simplement « _test 1 fonction_ », par exemple ?
+
+À l’instar du Big bang, l’origine d’Hello world reste flou. Des propres aveux de Brian Kernighan dans une interview accordée à Forbes, « _sa mémoire défaille_ ». Cependant il semble que les termes soient tirés d’un dessin animé qu’il avait vu à l’époque. Dans le dessin animé, un poussin sortait de son œuf en s’écriant « _Hello world_ ». Info ou mytho, quoi qu’il en soit, le choix des termes et le contexte semblent contribuer à une certaine mythologie du langage, sorte de symbole de la naissance de celui-ci.
+
+
+Si l’utilisation encore aujourd’hui de ces deux mots peut être questionnée, il est intéressant de se demander s’ils ne sont pas devenus plus qu’une tradition, un symbole. « _Hello world_ » peut prendre des interprétations multiples, en particulier de nos jours. Ils ont pu au fil des années et de l’évolution de l’informatique et d’Internet renforcer une mythologie. Écrire « _Hello world_ » lors d’une première fonction et la voir s’afficher, c’est voir « _naître_ » son code sous ses yeux, c’est « _mettre au monde_ » celui-ci. « _Hello world_ », c’est potentiellement cherché l’universalité, chercher à atteindre tous et toutes et dans tous les pays. Aussi simple que « _Bonjour_ ». « _Hello world_ », c’est aussi ancrer leur usage, perpétuer la tradition et participer à l’Histoire de l’informatique.
