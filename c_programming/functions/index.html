@@ -32,8 +32,6 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "Thanks for reading !!!!!!!", url: "#_top", children: [
-          ]},
         ];
 
     </script>
@@ -81,25 +79,14 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     <p><img alt="Logo of C" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvSKZqs76ra9ZzvgCR51vCoFGA2HLQH3EvFg&amp;usqp=CAU" /></p>
-<p><em>Welcome to the necessary functions section in C for a student from Epitech.</em></p>
+<p><strong><em>Welcome to the necessary functions section in C for a student from Epitech.</em></strong></p>
 <p>As the title indicates, in this section we will especially talk about some necessary functions in C for a student from Epitech.</p>
 <p>Let's go !!!</p>
+<hr />
 <p><em><strong>1. Hello World</strong></em></p>
 <p>If you don't know it, it has become a <strong>tradition</strong> in the developer culture to start learning a new language by writing a function displaying the message "Hello World".</p>
 <p><a href="../helloworld_knowmore/">More ...</a></p>
-<pre><code class="cmd">[I.A.M.GOD_OF_C --]$ ls
-Bureau      Téléchargements     Vidéos      FUNCTIONS_EPITOOLS
-
-Documents   Musique             Images
-
-[I.A.M.GOD_OF_C --]$ cd FUNCTIONS_EPITOOLS/
-[I.A.M.GOD_OF_C -- FUNCTIONS_EPITOOLS]$ cd helloworld
-[I.A.M.GOD_OF_C -- helloworld]$ ls
-main.c
-[I.A.M.GOD_OF_C -- helloworld]$ cat main.c
-#include &lt;stdio/h&gt;
-
-int main(int ac, char **av)
+<pre><code class="c">int main(int ac, char **av)
 {
     int fd = 1; // fd is the file descriptor (see man page of write)
     int n = 12; // n is the number of characters of the string to print
@@ -109,16 +96,19 @@ int main(int ac, char **av)
 }
 </code></pre>
 
+<hr />
 <p><strong>2. my_putchar</strong></p>
 <p>my_putchar is one of the first functions to be coded in C at Epitech. It takes a single parameter, a character, which it then displays on the standard output.</p>
 <p>-[x] <strong>Prototype</strong> : <code>void my_putchar(char c);</code></p>
 <p>-[x] <strong>Output</strong> : The character passed as a parameter.</p>
 <p>-[x] <strong>Return</strong> : <em>Anything</em></p>
+<hr />
 <p><strong>3. my_strlen</strong></p>
 <p>my_strlen is a function that counts and returns the number of characters found in the string passed as parameter.</p>
 <p>-[x] <strong>Prototype</strong> : <code>int my_strlen(char const *str);</code></p>
 <p>-[x] <strong>Output</strong> : Nothing on the standard output.</p>
 <p>-[x] <strong>Return</strong> : A int that represents number of characters found in the string passed as parameter.</p>
+<hr />
 <p><strong>4. my_putstr</strong></p>
 <p>my_putstr is  a function that displays, one-by-one, the characters of a string.
 The address of the string’s first character will be found in the pointer passed as a parameter to the function.</p>
@@ -128,38 +118,43 @@ The address of the string’s first character will be found in the pointer passe
 <p><code>int my_putstr (char const *str);</code></p>
 <p>-[x] <strong>Output</strong> : Display the string passed as a parameter.</p>
 <p>-[x] <strong>Return</strong> : <em>Anything</em> in the first case and O or 1 in the second case. </p>
+<hr />
 <p><strong>5. my_putnbr</strong></p>
 <p>my_putnbr is a function that displays a number ( a int ) passed as a parameter.</p>
 <p>-[x] <strong>Prototype</strong> : <code>int my_put_nbr(int nb);</code></p>
 <p>-[x] <strong>Output</strong> : Display the number passed as a parameter.</p>
 <p>-[x] <strong>Return</strong> : O or 1 by default.</p>
+<hr />
 <p><strong>6. my_getnbr</strong></p>
 <p>my_getnbr is a function that returns a number, sent as a string.</p>
 <p>-[x] <strong>Prototype</strong> : <code>int my_getnbr(char const *str);</code></p>
 <p>-[x] <strong>Output</strong> : <em>Anything</em>.</p>
 <p>-[x] <strong>Return</strong> : Return a number sent as a string.</p>
+<hr />
 <p><strong>7. my_strcpy</strong></p>
 <p>my_strcpy is a function that copies a string into another. The destination string will already have enough memory to copy the source string.</p>
 <p>-[x] <strong>Prototype</strong> : <code>char *my_strcpy(char *dest, char const *src);</code></p>
 <p>-[x] <strong>Output</strong> : <em>Anything</em>.</p>
 <p>-[x] <strong>Return</strong> : The string.</p>
+<hr />
 <p><strong>8. my_strcmp</strong></p>
 <p>my_strcmp is a function that compares two strings character by character.</p>
 <p>-[x] <strong>Prototype</strong> : <code>int my_strcmp(char const *s1, char const *s2);</code></p>
 <p>-[x] <strong>Output</strong> : <em>Anything</em>.</p>
 <p>-[x] <strong>Return</strong> : 0 if both strings are the same else 1.</p>
+<hr />
 <p><strong>9. my_strcat</strong></p>
 <p>my_strcat is a function that concatenates two strings passed as parameters.</p>
 <p>-[x] <strong>Prototype</strong> : <code>char *my_strcat(char *dest, char const *src);</code></p>
 <p>-[x] <strong>Output</strong> : <em>Anything</em>.</p>
 <p>-[x] <strong>Return</strong> : The chain resulting from the concatenation.</p>
+<hr />
 <p><strong>10. my_str_to_word_array</strong></p>
 <p>my_str_to_word_array is a function that splits a string into words arranged in order in a double table.</p>
 <p>-[x] <strong>Prototype</strong> : <code>char **my_str_to_word_array(char const *str);</code></p>
 <p>-[x] <strong>Output</strong> : <em>Anything</em>.</p>
 <p>-[x] <strong>Return</strong> : The double table with the strings resulting from the parsing of the chain.</p>
 <hr />
-<h6 id="thanks-for-reading"><strong>Thanks for reading !!!!!!!</strong></h6>
 
   <br>
     
