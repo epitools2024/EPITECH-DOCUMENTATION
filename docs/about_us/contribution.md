@@ -1,11 +1,11 @@
-Contributing 
+**Contributing** 
 
-Fork it! 
+- Fork it! 
 
-Create your feature branch: git checkout -b my-new-feature 
+- Create your feature branch: git checkout -b my-new-feature 
 
-Commit your changes: git commit -am 'Add some feature' 
+- Commit your changes: git commit -am 'Add some feature' 
 
-Push to the branch: git push origin my-new-feature 
+- Push to the branch: git push origin my-new-feature 
 
-Submit a pull request 
+- Submit a pull request 

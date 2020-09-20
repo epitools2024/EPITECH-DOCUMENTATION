@@ -12,6 +12,7 @@ theme:
         search: 83
 
 nav:
+    - HOME: index.md
     - ABOUT EPITECH:
         - Epitech PEDAGOGY: about_epitech/epitech.md
         - Links & Documents: about_epitech/links_docs.md
