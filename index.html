@@ -1,214 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All you will use at EPITECH">
+  <meta name="author" content="epitools2024">
   
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>EPITECH Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All you will use at EPITECH">
-    <meta name="author" content="epitools2024">
-    
-    <link rel="shortcut icon" href="./img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>EPITECH Documentation</title>
-    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
-    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
-    <link href="./css/base.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/highlight.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="./js/jquery-3.2.1.min.js"></script>
-    <script src="./js/bootstrap-3.3.7.min.js"></script>
-    <script src="./js/highlight.pack.js"></script>
-    
-      <script src="./js/elasticlunr.min.js"></script>
-    
-    <base target="_top">
-    <script>
-      var base_url = '.';
-      var is_top_frame = (window === window.parent);
-        
-        var pageToc = [
-          {title: "Welcome to EPITECH Documentation", url: "#_top", children: [
-              {title: "Table of Content", url: "#table-of-content" },
-          ]},
-        ];
-
-    </script>
-    <script src="./js/base.js"></script> 
+  <script>
+    // Current page data
+    var mkdocs_page_name = "HOME";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
 </head>
 
-<body>
-<script>
-if (is_top_frame) { $('body').addClass('wm-top-page'); }
-</script>
+<body class="wy-body-for-nav" role="document">
 
-<nav class="navbar wm-page-top-frame">
-  <div class="container-fluid wm-top-container">
-    
-    <div class="wm-top-tool pull-right wm-vcenter">
-      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
-        
-        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
-          ><i class="fa fa-search" aria-hidden="true"></i></button>
-
-        <div class="input-group input-group-sm wm-top-search">
-          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
-          <span class="input-group-btn" role="search">
-            
-            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
-            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
-            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </span>
-        </div>
-      </form>
-    </div>
+  <div class="wy-grid-for-nav">
 
     
-    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
-      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
-    </div>
-
-    
-    
-
-    
-    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
-      
-      <div class="wm-top-title">
-        EPITECH Documentation<br>
-        
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> EPITECH Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
       </div>
-    </a>
-  </div>
-</nav>
 
-  <div id="main-content" class="wm-page-top-frame">
-    
-<nav class="wm-toc-pane">
-  
-    <ul class="wm-toctree wm-toc-repo">
-      <li class="wm-toc-li wm-toc-lev1">
-      <a class="wm-article-link wm-toc-text" href="https://github.com/epitools2024/epitech-documentation.git/">
-        <i class="fa fa-github"></i>
-
-        GitHub
-      </a>
-      </li>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href=".">HOME</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#table-of-content">Table of Content</a>
+    </li>
     </ul>
-  <ul class="wm-toctree">
-        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">HOME</a>
-</li>
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">ABOUT EPITECH</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="about_epitech/epitech/" class="wm-article-link wm-toc-text">Epitech PEDAGOGY</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="about_epitech/links_docs/" class="wm-article-link wm-toc-text">Links & Documents</a>
-</li>
-  </ul>
-</li>
-
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">INSTALLATION & CONFIGURATIONS</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="install_config/dual_boot/" class="wm-article-link wm-toc-text">Windows + Linux Distro</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="install_config/dump/" class="wm-article-link wm-toc-text">EPITECH DUMP</a>
-</li>
-  </ul>
-</li>
-
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">TOOLS CHEATSHEET</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/blih/" class="wm-article-link wm-toc-text">Blih</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/git/" class="wm-article-link wm-toc-text">Git</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/emacs/" class="wm-article-link wm-toc-text">Emacs</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/gcc/" class="wm-article-link wm-toc-text">Gcc</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/makefile/" class="wm-article-link wm-toc-text">Makefile</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/coding_style/" class="wm-article-link wm-toc-text">Coding Style</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/csfml/" class="wm-article-link wm-toc-text">Csfml Library</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="tools_cheatsheet/ncurses/" class="wm-article-link wm-toc-text">Ncurses Library</a>
-</li>
-  </ul>
-</li>
-
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">C PROGRAMMING</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="c_programming/functions/" class="wm-article-link wm-toc-text">Simples functions</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="c_programming/libmy/" class="wm-article-link wm-toc-text">Your library</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="c_programming/unit_test/" class="wm-article-link wm-toc-text">Unit Test</a>
-</li>
-  </ul>
-</li>
-
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">ABOUT US</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="about_us/epitools/" class="wm-article-link wm-toc-text">EPITOOLS</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="about_us/contribution/" class="wm-article-link wm-toc-text">Contribution</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="about_us/license/" class="wm-article-link wm-toc-text">LICENSE</a>
-</li>
-  </ul>
-</li>
-
-  </ul>
-</nav>
-
-    <div class="wm-content-pane">
-      <iframe class="wm-article" name="article"></iframe>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ABOUT EPITECH</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="about_epitech/epitech/">Epitech PEDAGOGY</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="about_epitech/links_docs/">Links & Documents</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">INSTALLATION & CONFIGURATIONS</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="install_config/dual_boot/">Windows + Linux Distro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="install_config/dump/">EPITECH DUMP</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">TOOLS CHEATSHEET</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="tools_cheatsheet/blih/">Blih</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tools_cheatsheet/git/">Git</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tools_cheatsheet/emacs/">Emacs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tools_cheatsheet/gcc/">Gcc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tools_cheatsheet/makefile/">Makefile</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tools_cheatsheet/coding_style/">Coding Style</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tools_cheatsheet/csfml/">Csfml Library</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tools_cheatsheet/ncurses/">Ncurses Library</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">C PROGRAMMING</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="c_programming/functions/">Simples functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="c_programming/libmy/">Your library</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="c_programming/unit_test/">Unit Test</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ABOUT US</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="about_us/epitools/">EPITOOLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="about_us/contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="about_us/license/">LICENSE</a>
+                    </li>
+                </ul>
+      </div>
     </div>
-  </div>
+    </nav>
 
-<div class="container-fluid wm-page-content">
-  <a name="_top"></a>
-    
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
-    
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">EPITECH Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
     
       
     
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="about_epitech/epitech/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="about_epitech/epitech/" class="btn btn-xs btn-link">
-        Epitech PEDAGOGY
-      </a>
-    </div>
-    
-  </div>
-
-    
-
-    <h2 id="welcome-to-epitech-documentation">Welcome to EPITECH Documentation</h2>
+    <li>HOME</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="welcome-to-epitech-documentation">Welcome to EPITECH Documentation</h2>
 <hr />
 <h3 id="table-of-content">Table of Content</h3>
 <ul>
@@ -259,43 +192,62 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <blockquote>
 <p><em>First solve the problem. Then, write the code.</em> – <strong>John Johnson</strong></p>
 </blockquote>
-
-  <br>
-    
-
-    
-    
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-    
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="about_epitech/epitech/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="about_epitech/epitech/" class="btn btn-xs btn-link">
-        Epitech PEDAGOGY
-      </a>
+        <a href="about_epitech/epitech/" class="btn btn-neutral float-right" title="Epitech PEDAGOGY">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
     </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>EPITOOLS 2024</p>
     
   </div>
 
-    <br>
-</div>
-
-<footer class="container-fluid wm-page-content">
-      <p>
-        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/index.md"><i class="fa fa-github"></i>
-Edit on GitHub</a>
-      </p><p>EPITOOLS 2024</p>
-  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/epitools2024/epitech-documentation.git/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+        <span style="margin-left: 15px"><a href="about_epitech/epitech/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>
+
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2020-09-23 21:37:06.668692+00:00
+Build Date UTC : 2020-09-23 21:42:42.176343+00:00
 -->
