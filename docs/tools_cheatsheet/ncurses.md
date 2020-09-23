@@ -1,1 +1,0 @@
-All the basics tools of ncurses lib
