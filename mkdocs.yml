@@ -4,7 +4,7 @@ site_description: "All you will use at EPITECH"
 site_author: epitools2024
 
 theme:
-    name: readthedocs
+    name: windmill
     colorscheme: github
     shortcuts:
         next: 78
