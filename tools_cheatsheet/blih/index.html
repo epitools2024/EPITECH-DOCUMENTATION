@@ -1,232 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <meta name="author" content="epitools2024">
   
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="author" content="epitools2024">
-    
-    <link rel="shortcut icon" href="../../img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Blih - EPITECH Documentation</title>
-    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
-    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
-    <link href="../../css/base.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/highlight.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Blih - EPITECH Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-    <script src="../../js/jquery-3.2.1.min.js"></script>
-    <script src="../../js/bootstrap-3.3.7.min.js"></script>
-    <script src="../../js/highlight.pack.js"></script>
-    
-    <base target="_top">
-    <script>
-      var base_url = '../..';
-      var is_top_frame = false;
-        
-        var pageToc = [
-        ];
-
-    </script>
-    <script src="../../js/base.js"></script> 
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Blih";
+    var mkdocs_page_input_path = "tools_cheatsheet/blih.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
 </head>
 
-<body>
-<script>
-if (is_top_frame) { $('body').addClass('wm-top-page'); }
-</script>
+<body class="wy-body-for-nav" role="document">
 
-
-
-<div class="container-fluid wm-page-content">
-  <a name="_top"></a>
-    
+  <div class="wy-grid-for-nav">
 
     
-    
-      
-    
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="../git/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="../git/" class="btn btn-xs btn-link">
-        Git
-      </a>
-    </div>
-    
-    <div class="wm-article-nav">
-      <a href="../../install_config/dump/" class="btn btn-xs btn-default pull-left">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../../install_config/dump/" class="btn btn-xs btn-link">
-        EPITECH DUMP
-      </a>
-    </div>
-    
-  </div>
-
-    
-
-    <p>The Bocal Lightweight Interface for Humans, BLIH is the EPITECH repository management tool.
-A student from the class of 2021 created a WEB interface called <a href="https://github.com/maximelouet/blih-web">BLIH web</a>.
-Throughout the school year, you're going to have to submit projects on Epitech servers.</p>
-<p>If you have used the <a href="https://github.com/kayofeld/script-installation-ordinateur-epitech">kayofeld script</a>, you are a <code>winner</code>. The script installs the BLIH and configures the necessary.
-Else, following these steps :</p>
-<p>Generate a new key, that is stored as a file and will allow you to authenticate yourself on the submittal system and secure the data exchanges.</p>
-<p>Here, you will leave all of the default values by simply pressing enter each time.</p>
-<pre><code class="bash">$ ssh-keygen
-</code></pre>
-
-<p>By default, the ssh key was generated in a file on your pc, in your home ~/.ssh/.</p>
-<pre><code class="bash">$ ls ~/.ssh/
-</code></pre>
-
-<p>You can see in this folder (~/.ssh), there are two files.</p>
-<p>Now all you have to do is link your ssh key to blih by using this command, and enter your UNIX password (Epitech Password)</p>
-<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; sshkey upload ~/.ssh/id_rsa.pub
-</code></pre>
-
-<p>Now, BLIH is ready to be used.</p>
-<ul>
-<li>You can create a repository using:</li>
-</ul>
-<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository create repo_name
-</code></pre>
-
-<p><code>repo_name: for example, CPool_Day01_2020</code></p>
-<ul>
-<li>To give read permissions to <code>Nao Marvin</code></li>
-</ul>
-<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository setacl repo_name ramassage_tek r
-</code></pre>
-
-<ul>
-<li>If you work with another person in the project, you can give him person using:</li>
-</ul>
-<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository setacl repo_name hisSurname.hisName@epitech.eu rwx
-</code></pre>
-
-<p><code>Note that r is for read, w for write et x for excute.</code></p>
-<ul>
-<li>If you want to see who has permissions in your repo, you can type:</li>
-</ul>
-<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository getacl repo_name
-</code></pre>
-
-<ul>
-<li>If you want to delete a repo,</li>
-</ul>
-<pre><code class="bash">$ blih -u &quot;surname.name@epitech.eu&quot; repository delete repo_name
-</code></pre>
-
-<ul>
-<li>There are other commands, you can type</li>
-</ul>
-<pre><code class="bash">$ blih -h
-</code></pre>
-
-<p>You can find the official repo of blih <a href="https://github.com/bocal/blih">here</a>.</p>
-<hr />
-<p>You can also use ezblih</p>
-<p>For that, you need node and npm. You can install it here depending on your os. <a href="https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages">Node Installer</a></p>
-<p>To install ezblih,</p>
-<pre><code>$ sudo npm i -g ezblih
-</code></pre>
-
-<p>Upload your ssh-keygen with</p>
-<pre><code>$ ssh-keygen
-</code></pre>
-
-<p>and press <code>Enter</code> 3 times.
-Then, type,</p>
-<pre><code>$ ezb upload
-</code></pre>
-
-<p>The commands of ezblih are not very different from those of blih. It's just simpler. You can do the same actions as before using the commands below. ezblih will do the work for you. Use the following commands preceded by <code>ezblih</code>.</p>
-<p>upload</p>
-<p>create repo_name</p>
-<p>setacl repo_name user rights</p>
-<p>getacl repo_name</p>
-<p>delete repo_name</p>
-<p>If you don't want to type your email and password for each command, you can create an .env file in an ezblih folder that you also created in your home directory.</p>
-<pre><code>~/ezblih/.env
-</code></pre>
-
-<p>Then fill the <code>.env</code> file with the content :</p>
-<pre><code>BLIH_EMAIL=surname.name@epitech.eu
-BLIH_PASSWORD=your_password
-</code></pre>
-<p>It is possible to fill only the email, in this case only the password will be asked.</p>
-<p>You can find the official repo of ezblih <a href="https://github.com/Rikette/ezblih">here</a>.</p>
-<hr />
-<p>A simple script can be used to retrieve your old repo:</p>
-<p><code>Using Blih</code></p>
-<pre><code class="bash">for repo in `blih repository list`; do
-    git clone $USER@git.epitech.eu:/$USER/$repo;
-done
-</code></pre>
-
-<p><code>Using ezblih</code></p>
-<pre><code class="bash">for repo in `ezblih list`; do
-    git clone $USER@git.epitech.eu:/$USER/$repo;
-done
-</code></pre>
-
-<p><code>$USER</code> is your epitech login</p>
-<p>This script retrieves all the repositories present on blih in the current directory. This procedure can therefore take some time.</p>
-<p>You can also access all your repo on this site <a href="https://blih.saumon.io/">Blih Web</a></p>
-
-  <br>
-    
-
-    
-    
-      
-    
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="../git/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="../git/" class="btn btn-xs btn-link">
-        Git
-      </a>
-    </div>
-    
-    <div class="wm-article-nav">
-      <a href="../../install_config/dump/" class="btn btn-xs btn-default pull-left">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../../install_config/dump/" class="btn btn-xs btn-link">
-        EPITECH DUMP
-      </a>
-    </div>
-    
-  </div>
-
-    <br>
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> EPITECH Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
 </div>
+      </div>
 
-<footer class="container-fluid wm-page-content">
-      <p>
-        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/tools_cheatsheet/blih.md"><i class="fa fa-github"></i>
-Edit on GitHub</a>
-      </p><p>EPITOOLS 2024</p>
-  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">HOME</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ABOUT EPITECH</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_epitech/epitech/">Epitech PEDAGOGY</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_epitech/links_docs/">Links & Documents</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">INSTALLATION & CONFIGURATIONS</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install_config/dual_boot/">Windows + Linux Distro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install_config/dump/">EPITECH DUMP</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">TOOLS CHEATSHEET</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Blih</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../git/">Git</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../emacs/">Emacs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gcc/">Gcc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../makefile/">Makefile</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../coding_style/">Coding Style</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../csfml/">Csfml Library</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ncurses/">Ncurses Library</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">C PROGRAMMING</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../c_programming/functions/">Simples functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../c_programming/libmy/">Your library</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../c_programming/unit_test/">Unit Test</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ABOUT US</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_us/epitools/">EPITOOLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_us/contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_us/license/">LICENSE</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">EPITECH Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>TOOLS CHEATSHEET &raquo;</li>
+        
+      
+    
+    <li>Blih</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/tools_cheatsheet/blih.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../git/" class="btn btn-neutral float-right" title="Git">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../install_config/dump/" class="btn btn-neutral" title="EPITECH DUMP"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>EPITOOLS 2024</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/epitools2024/epitech-documentation.git/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../install_config/dump/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../git/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>
