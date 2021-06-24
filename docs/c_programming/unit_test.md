@@ -10,6 +10,7 @@ Install Criterion first
 $ gcc -o binary_name file.c tests/test_project.c -- coverage -lcriterion
 ```
 
+
 ```bash
 $ gcovr --exclude tests
 ```
