@@ -34,7 +34,28 @@ Test(suite_name, test_name) {
 ```
 In this example if the condition ```i * 2 == j``` is not verified the message is displayed.
 
-Very important at EPITECH
+```bash
+cr_assert(condition)
+cr_assert_not(condition)
+```
+
+If you want to compare arrays, please refer to ```cr_assert_str_eq()``` or ```cr_assert_arr_eq()```.
+
+***Redirections***
+
+To use the following assertions, you must include ```<criterion/redirect.h>``` along with ```<criterion/criterion.h>```.
+
+```bash
+cr_assert_stdout_eq_str(Value)
+```
+
+These asserts allow to compare the content of stdout with Value
+
+```bash
+ cr_assert_stderr_eq_str(Value)
+```
+
+These asserts allow to compare the content of stderr with value.
 
 **Makefile rule for Unit Test**
 
