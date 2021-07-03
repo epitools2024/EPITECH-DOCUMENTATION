@@ -5,6 +5,11 @@
 Get access to the full [Epitech documentation](https://epitools2024.github.io/EPITECH-DOCUMENTATION/)
 It is also available [here](https://epitech-documentation.readthedocs.io/en/latest/index.html)
 
+## PREREQUISITES
+
+- Install [mkdocs](https://www.mkdocs.org/getting-started/) to build the project
+- Gh-Pages is used to deploy our documentation
+
 ## HOW TO CONTRIBUTE
 
 Everyone can contribute especially Epitech Students
