@@ -21,14 +21,20 @@
     - [*Gcc*](tools_cheatsheet/gcc.md)
     - [*Makefile*](tools_cheatsheet/makefile.md)
     - [*Coding style*](tools_cheatsheet/coding_style.md)
-    - [*Csfml Library*](tools_cheatsheet/csfml.md)
-    - [*Ncurses Library*](tools_cheatsheet/ncurses.md)
+    - [*TTY*](tools_cheatsheet/TTY.md)
 
 * **[IV. C PROGRAMMING](c_programming/functions.md)**
 
     - [*Simples functions*](c_programming/functions.md)
-    - [*Your library*](c_programming/libmy.md)
-    - [*Unit Test*](c_programming/unit_test.md)
+    - Libraries
+        - [*Csfml Library*](tools_cheatsheet/csfml.md)
+        - [*Ncurses Library*](tools_cheatsheet/ncurses.md)
+        - [*Your library*](c_programming/libmy.md)
+    - Notions
+        - [*Structures*](c_programming/structures.md)
+        - [*Lists*](c_programming/lists.md)
+        - [*Pointers*](c_programming/pointers.md)
+        - [*Unit Test*](c_programming/unit_test.md)
 
 * **[V. ABOUT US](about_us/epitools.md)**
 

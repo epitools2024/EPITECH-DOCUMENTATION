@@ -26,12 +26,19 @@ nav:
         - Gcc: tools_cheatsheet/gcc.md
         - Makefile: tools_cheatsheet/makefile.md
         - Coding Style: tools_cheatsheet/coding_style.md
-        - Csfml Library: tools_cheatsheet/csfml.md
-        - Ncurses Library: tools_cheatsheet/ncurses.md
+        - TTY: tools_cheatsheet/TTY.md
+       
     - C PROGRAMMING:
         - Simples functions: c_programming/functions.md
-        - Your library: c_programming/libmy.md
-        - Unit Test: c_programming/unit_test.md
+        - libraries :
+            - Csfml Library: tools_cheatsheet/csfml.md
+            - Ncurses Library: tools_cheatsheet/ncurses.md
+            - Your Library: c_programming/libmy.md
+        - Notions :
+            - Structures: c_programming/structures.md
+            - Lists: c_programming/lists.md
+            - Pointers: c_programming/pointers.md
+            - Unit Test: c_programming/unit_test.md
     - ABOUT US:
         - EPITOOLS: about_us/epitools.md
         - Contribution: about_us/contribution.md
