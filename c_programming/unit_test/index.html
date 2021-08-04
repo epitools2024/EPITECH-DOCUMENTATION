@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="epitools2024">
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Unit Test - EPITECH Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Unit Test";
+    var mkdocs_page_input_path = "c_programming/unit_test.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> EPITECH Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">HOME</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ABOUT EPITECH</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_epitech/epitech/">Epitech PEDAGOGY</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_epitech/links_docs/">Links & Documents</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">INSTALLATION & CONFIGURATIONS</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install_config/dual_boot/">Windows + Linux Distro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install_config/dump/">EPITECH DUMP</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">TOOLS CHEATSHEET</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools_cheatsheet/blih/">Blih</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools_cheatsheet/git/">Git</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools_cheatsheet/emacs/">Emacs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools_cheatsheet/gcc/">Gcc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools_cheatsheet/makefile/">Makefile</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools_cheatsheet/coding_style/">Coding Style</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools_cheatsheet/TTY/">TTY</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">C PROGRAMMING</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../functions/">Simples functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">libraries</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../tools_cheatsheet/csfml/">Csfml Library</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tools_cheatsheet/ncurses/">Ncurses Library</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../libmy/">Your Library</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Notions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../structures/">Structures</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../lists/">Lists</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../pointers/">Pointers</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Unit Test</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ABOUT US</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_us/epitools/">EPITOOLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_us/contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_us/license/">LICENSE</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">EPITECH Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>C PROGRAMMING &raquo;</li>
+        
+      
+        
+          <li>Notions &raquo;</li>
+        
+      
+    
+    <li>Unit Test</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/epitools2024/epitech-documentation.git/edit/master/docs/c_programming/unit_test.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p>Unit tests are tests that allow you to check the correctness and efficiency of your functions.</p>
+<p>To start with we need the librairy criterion.</p>
+<p>Criterion is a unit-testing tool that will allow you to test your code efficiently. Criterion lets you create a set of tests that will be executed on your code.</p>
+<p><strong>Install Criterion</strong></p>
+<pre><code class="language-bash">$ sudo dnf install criterion
+</code></pre>
+<p>If you want your tests to work, you must compile your code with Criterion’s library using the -lcriterion flag.</p>
+<p>To see the coverage you need to install <code>gcovr</code></p>
+<pre><code class="language-bash">$ sudo dnf install gcovr
+</code></pre>
+<p><strong>Basic of Unit testing</strong></p>
+<p><strong><em>Assert</em></strong></p>
+<p>Asserts are Criterion’s way of defining tests to run and all asserts are located in the header <code>&lt;criterion/criterion.h&gt;</code>.</p>
+<p><strong><em>Basic asserts</em></strong>
+./
+The asserts below allows to test a function while returning a sentence if the <code>condition</code> is not verified.</p>
+<pre><code class="language-C">Test(suite_name, test_name) {
+    int i = 2;
+    cr_assert(i * 2 == 4, &quot;The result was %d. Expected %d&quot;, i * 2, 4);
+}
+</code></pre>
+<p>In this example if the condition <code>i * 2 == j</code> is not verified the message is displayed.</p>
+<pre><code class="language-bash">cr_assert(condition)
+cr_assert_not(condition)
+</code></pre>
+<p>If you want to compare arrays, please refer to <code>cr_assert_str_eq()</code> or <code>cr_assert_arr_eq()</code>.</p>
+<p><strong><em>Redirections</em></strong></p>
+<p>To use the following assertions, you must include <code>&lt;criterion/redirect.h&gt;</code> along with <code>&lt;criterion/criterion.h&gt;</code>.</p>
+<pre><code class="language-bash">cr_assert_stdout_eq_str(Value)
+</code></pre>
+<p>These asserts allow to compare the content of stdout with Value</p>
+<pre><code class="language-bash"> cr_assert_stderr_eq_str(Value)
+</code></pre>
+<p>These asserts allow to compare the content of stderr with value.</p>
+<p>Here is a sample usage of this assert.</p>
+<pre><code class="language-C">#include &lt;criterion/criterion.h&gt;
+#include &lt;criterion/redirect.h&gt;
+
+void redirect_all_stdout(void)
+{
+        cr_redirect_stdout();
+        cr_redirect_stderr();
+}
+
+int error(void)
+{
+        write(2, &quot;error&quot;, 5);
+        return(0);
+}
+
+Test(errors, exit_code, .init=redirect_all_stdout)
+{
+        error();
+        cr_assert_stderr_eq_str(&quot;error&quot;, &quot;&quot;);
+}
+</code></pre>
+<p>NB: You must include criterion.h and redirect.h in this order, otherwise your tests won’t work.</p>
+<p><strong>Test options</strong></p>
+<p><strong><em>.init</em></strong></p>
+<p>This parameter takes a function pointer as an argument. Criterion will execute the function just before running the test. The function pointer should be of type  <code>void(*)(void)</code>.</p>
+<pre><code class="language-C">void my_func(void)
+{
+        my_putstr(&quot;My test\n&quot;);
+}
+
+Test(suite_name, test_name, .init = my_func)
+{
+        //tests
+}
+</code></pre>
+<p><strong><em>.fini</em></strong></p>
+<p>This parameter takes a function pointer to a function that will be executed after the tests is finished.</p>
+<p>It takes the same pointer type as the <code>.init</code> parameter, and also has the same usage.</p>
+<p><strong><em>.exit_code</em></strong></p>
+<p>If you want to test your error handling, you can use the .exit_code parameter so the test will be marked as passed if the given exit code is found.</p>
+<pre><code class="language-C">int error(void)
+{
+        write(2, &quot;error&quot;, 5);
+        exit(0);
+}
+
+Test(errors, exit_code, .exit_code = 84)
+{
+        error();
+        cr_assert_stderr_eq(&quot;error&quot;, &quot;&quot;);
+}
+</code></pre>
+<p><strong><em>.signal</em></strong></p>
+<p>If a test receives a signal, it will by default be marked as a failure. However, you can expect a test to pass if a special kind of signal is received.</p>
+<p><strong><em>.disabled</em></strong></p>
+<p>If it's true, the test will be skipped.</p>
+<p><strong><em>.description</em></strong></p>
+<p>This parameter must be used in order to give extra definition of the test’s purpose, which can be quite helpful if your suite_name and test_name aren’t as explicit as you would like.</p>
+<p><strong><em>.timeout</em></strong></p>
+<p>This parameter takes a double, representing a duration. If your test takes longer than this duration to run, the test will be marked as failed.</p>
+<p><strong>Makefile rule for Unit Test</strong></p>
+<pre><code class="language-bash">$ gcc -o binary_name file.c tests/test_project.c -- coverage -lcriterion
+</code></pre>
+<pre><code class="language-bash">$ gcovr --exclude tests
+</code></pre>
+<pre><code class="language-bash">$ gcovr --exclude tests --branches
+</code></pre>
+<p>NB: The command to execute the test units must be</p>
+<pre><code class="language-bash">$ make tests_run
+</code></pre>
+<p><a href="https://epitech-2022-technical-documentation.readthedocs.io/en/latest/criterion.html">Criterion doc epitech</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../about_us/epitools/" class="btn btn-neutral float-right" title="EPITOOLS">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../pointers/" class="btn btn-neutral" title="Pointers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>EPITOOLS 2024</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/epitools2024/epitech-documentation.git/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../pointers/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../about_us/epitools/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
