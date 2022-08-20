@@ -4,9 +4,6 @@ data type, but does not create a new type.
 
 In short, we can say that this keyword is used to **redefine the name of an already existing variable**.
 
-<br/>
-<br/>
-
 ***Syntax***:<br/>
     ```
     typedef <data_type> <alias>;
