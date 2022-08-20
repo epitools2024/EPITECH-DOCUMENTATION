@@ -7,13 +7,13 @@ In short, we can say that this keyword is used to **redefine the name of an alre
 <br/>
 <br/>
 
-**Syntax**:<br/>
+***Syntax***:<br/>
     ```
     typedef <data_type> <alias>;
     ```
 <br/>
 
-**Examples**:<br/>
+***Examples***:<br/>
     ```
     typedef unsigned int unit;
     ```
