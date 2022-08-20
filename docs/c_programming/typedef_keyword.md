@@ -1,6 +1,5 @@
 The **typedef** is a keyword used in C programming to provide some meaningful names<br/>
-to the already existing variable in the C program. It is used to create an additional name (alias) for another<br/> 
-data type, but does not create a new type.
+to the already existing variables in the C program. It is used to create an additional name (alias) for another data type, but does not create a new type.
 
 In short, we can say that this keyword is used to **redefine the name of an already existing variable**.
 
@@ -18,7 +17,7 @@ In short, we can say that this keyword is used to **redefine the name of an alre
 
 In the above statements, we have replaced the *unsigned int* type by an alias named *unit* by using a typedef keyword.
 
-Now, we can create the variables of type unsigned int by writing:<br/>
+Now, we can create the variables of type *unsigned int* by writing:<br/>
     ```
     unit a = 42;
     ```
@@ -46,5 +45,8 @@ typedef struct student {
 }student_t;
 ```
 
-From the above declaration, we notice that typedef keyword reduces the length of the code and complexity of data type. From now, we just have<br/>
+From the above declaration, we notice that typedef keyword reduces the length of the code and complexity of data type. From now, we just have
 to write ```student_t s1``` to create a variable s1 of type struct student.
+
+For more information on the subject, we suggest the following link:<br/>
+[C typedef](https://devdocs.io/c/language/typedef)
