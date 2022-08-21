@@ -1,0 +1,49 @@
+{
+    "files": [
+        "README.md"
+    ],
+    "commit": false,
+    "contributors": [
+        {
+            "login": "blacky-yg",
+            "name": "blacky-yg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/49866160?v=4",
+            "profile": "https://github.com/blacky-yg",
+            "contributions": [
+                "docs"
+            ]
+        },
+        {
+            "login": "NemesisX1",
+            "name": "NemesisX1 ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/55746329?v=4",
+            "profile": "https://github.com/NemesisX1",
+            "contributions": [
+                "docs"
+            ]
+        },
+        {
+            "login": "pinhero",
+            "name": "pinhero",
+            "avatar_url": "https://avatars.githubusercontent.com/u/72024178?v=4",
+            "profile": "https://github.com/pinhero",
+            "contributions": [
+                "docs"
+            ]
+        },
+        {
+            "login": "AmanMenda",
+            "name": "AmanMenda",
+            "avatar_url": "https://avatars.githubusercontent.com/u/92232342?v=4",
+            "profile": "https://github.com/AmanMenda",
+            "contributions": [
+                "docs"
+            ]
+        }
+    ],
+    "contributorsPerLine": 4,
+    "projectName": "EPITECH-DOCUMENTATION",
+    "projectOwner": "blacky-yg",
+    "repoType": "github",
+    "repoHost": "https://github.com"
+}
