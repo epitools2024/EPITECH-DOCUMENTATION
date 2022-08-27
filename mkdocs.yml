@@ -39,6 +39,8 @@ nav:
             - Lists: c_programming/lists.md
             - Pointers: c_programming/pointers.md
             - Unit Test: c_programming/unit_test.md
+            - Typedef Keyword: c_programming/typedef_keyword.md
+
     - ABOUT US:
         - EPITOOLS: about_us/epitools.md
         - Contribution: about_us/contribution.md
