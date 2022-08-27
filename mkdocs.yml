@@ -40,6 +40,10 @@ nav:
             - Pointers: c_programming/pointers.md
             - Unit Test: c_programming/unit_test.md
             - Typedef Keyword: c_programming/typedef_keyword.md
+            - Preprocessor: 
+                - Intro: c_programming/preprocessor.md
+                - Include Guards: c_programming/include_guards.md
+                - Macros: c_programming/macros.md
 
     - ABOUT US:
         - EPITOOLS: about_us/epitools.md
