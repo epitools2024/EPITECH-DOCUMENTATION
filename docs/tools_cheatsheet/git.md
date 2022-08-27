@@ -26,7 +26,7 @@ If you are working with someone on the project, you can retrieve the changes fro
 git pull origin <the_branch_on_which_the_files_have_been_pushed>
 ```
 
-There are a lot of git commands to manage your code. Especially when you are working on a project together. You can see a summary of the commands you can use on these sites.
+There are a lot of git commands to manage your code, especially when you are working on a project together. You can see a summary of the commands you can use on these sites.
 
 - [Git CheatSheet](https://ndpsoftware.com/git-cheatsheet.html#loc=index)
 

@@ -11,7 +11,7 @@ int abs(int number)
 }
 ```
 <br/>
-We can rewrite above the code using a macro as follows :
+We can rewrite the above code using a macro as follows:
 
 ```header
 #define ABS(x) (x < 0 ? -x : x)
