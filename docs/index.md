@@ -19,7 +19,7 @@
     - [*Git*](tools_cheatsheet/git.md)
     - [*Emacs*](tools_cheatsheet/emacs.md)
     - [*Gcc*](tools_cheatsheet/gcc.md)
-    - [*Makefile*](tools_cheatsheet/makefile.md)
+    - [*Makefile*](tools_cheatsheet/Makefile.md)
     - [*Coding style*](tools_cheatsheet/coding_style.md)
     - [*TTY*](tools_cheatsheet/TTY.md)
 
