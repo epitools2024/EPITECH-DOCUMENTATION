@@ -106,10 +106,10 @@ To prevent make from getting confused by a file called "clean" and force it to s
 ```Makefile
 .PHONY : clean
 clean : 
-    -rm -f *.o
-    -rm -f *.gcda
-    -rm -f *.gcno
-    -rm -f *.gcovr
+    rm -f *.o
+    rm -f *.gcda
+    rm -f *.gcno
+    rm -f *.gcovr
 ```
 There are two reasons to use a phony target: to avoid a conflict with a file of the same name, and to improve performance. 
 
